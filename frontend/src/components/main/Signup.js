@@ -52,201 +52,132 @@ const Signup = () => {
   })
 
   return (
-    <>
-      {/* Pills navs */}
-      <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-        <li className="nav-item" role="presentation">
-          <a
-            className="nav-link active"
-            id="tab-login"
-            data-mdb-toggle="pill"
-            href="#pills-login"
-            role="tab"
-            aria-controls="pills-login"
-            aria-selected="true"
-          >
-            Login
-          </a>
-        </li>
-        <li className="nav-item" role="presentation">
-          <a
-            className="nav-link"
-            id="tab-register"
-            data-mdb-toggle="pill"
-            href="#pills-register"
-            role="tab"
-            aria-controls="pills-register"
-            aria-selected="false"
-          >
-            Register
-          </a>
-        </li>
-      </ul>
-      {/* Pills navs */}
-      {/* Pills content */}
-      <div className="tab-content">
-        <div
-          className="tab-pane fade show active"
-          id="pills-login"
-          role="tabpanel"
-          aria-labelledby="tab-login"
-        >
-          <form onSubmit={signupForm.handleSubmit}>
-            <div className="text-center mb-3">
-              <p>Sign in with:</p>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-facebook-f" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-google" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-twitter" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-github" />
-              </button>
-            </div>
-            <p className="text-center">or:</p>
-            {/* Email input */}
-            <div className="form-outline mb-4">
-              <input type="email" id="loginName" className="form-control" />
-              <label className="form-label" htmlFor="loginName">
-                Email or username
-              </label>
-            </div>
-            {/* Password input */}
-            <div className="form-outline mb-4">
-              <input type="password" id="loginPassword" className="form-control" />
-              <label className="form-label" htmlFor="loginPassword">
-                Password
-              </label>
-            </div>
-            {/* 2 column grid layout */}
-            <div className="row mb-4">
-              <div className="col-md-6 d-flex justify-content-center">
-                {/* Checkbox */}
-                <div className="form-check mb-3 mb-md-0">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    defaultValue=""
-                    id="loginCheck"
-                    defaultChecked=""
-                  />
-                  <label className="form-check-label" htmlFor="loginCheck">
-                    {" "}
-                    Remember me{" "}
-                  </label>
-                </div>
+
+  <>
+  {/* Section: Design Block */}
+  <section className="">
+    {/* Jumbotron */}
+    <div
+      className="px-4 py-5 px-md-5 text-center text-lg-start"
+      style={{ backgroundColor: "hsl(0, 0%, 96%)" }}
+    >
+      <div className="container">
+        <div className="row gx-lg-5 align-items-center">
+          <div className="col-lg-6 mb-5 mb-lg-0">
+            <h1 className="my-5 display-3 fw-bold ls-tight">
+              PosterMagic<br />
+              <span className="text-primary">AR</span>
+            </h1>
+            <p style={{ color: "hsl(217, 10%, 50.8%)" }}>
+            Augmented Reality is a technology that combines the real world with
+            digital elements to create an interactive experience.
+            </p>
+          </div>
+          <div className="col-lg-6 mb-5 mb-lg-0">
+            <div className="card">
+              <div className="card-body py-5 px-md-5">
+                <form>
+                  {/* 2 column grid layout with text inputs for the first and last names */}
+                  <div className="row">
+                    <div className="col-md-6 mb-4">
+                      <div className="form-outline">
+                        <input
+                          type="text"
+                          id="form3Example1"
+                          className="form-control"
+                        />
+                        <label className="form-label" htmlFor="form3Example1">
+                          First name
+                        </label>
+                      </div>
+                    </div>
+                    <div className="col-md-6 mb-4">
+                      <div className="form-outline">
+                        <input
+                          type="text"
+                          id="form3Example2"
+                          className="form-control"
+                        />
+                        <label className="form-label" htmlFor="form3Example2">
+                          Last name
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Email input */}
+                  <div className="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="form3Example3"
+                      className="form-control"
+                    />
+                    <label className="form-label" htmlFor="form3Example3">
+                      Email address
+                    </label>
+                  </div>
+                  {/* Password input */}
+                  <div className="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="form3Example4"
+                      className="form-control"
+                    />
+                    <label className="form-label" htmlFor="form3Example4">
+                      Password
+                    </label>
+                  </div>
+                  {/* Checkbox */}
+                  <div className="form-check d-flex justify-content-center mb-4">
+                    <input
+                      className="form-check-input me-2"
+                      type="checkbox"
+                      defaultValue=""
+                      id="form2Example33"
+                      defaultChecked=""
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="form2Example33"
+                    >
+                      I am Agree
+                    </label>
+                  </div>
+                  {/* Submit button */}
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-block mb-4"
+                  >
+                    Sign up
+                  </button>
+                  {/* Register buttons */}
+                  <div className="text-center">
+                    <p>or sign up with:</p>
+                    <button
+                      type="button"
+                      className="btn btn-link btn-floating mx-1"
+                    >
+                      <i className="fab fa-facebook-f" />
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-link btn-floating mx-1"
+                    >
+                      <i className="fab fa-google" />
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div className="col-md-6 d-flex justify-content-center">
-                {/* Simple link */}
-                <a href="#!">Forgot password?</a>
-              </div>
             </div>
-            {/* Submit button */}
-            <button type="submit" className="btn btn-primary btn-block mb-4">
-              Sign in
-            </button>
-            {/* Register buttons */}
-            <div className="text-center">
-              <p>
-                Not a member? <a href="#!">Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
-        <div
-          className="tab-pane fade"
-          id="pills-register"
-          role="tabpanel"
-          aria-labelledby="tab-register"
-        >
-          <form>
-            <div className="text-center mb-3">
-              <p>Sign up with:</p>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-facebook-f" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-google" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-twitter" />
-              </button>
-              <button type="button" className="btn btn-secondary btn-floating mx-1">
-                <i className="fab fa-github" />
-              </button>
-            </div>
-            <p className="text-center">or:</p>
-            {/* Name input */}
-            <div className="form-outline mb-4">
-              <input type="text" id="registerName" className="form-control" />
-              <label className="form-label" htmlFor="registerName">
-                Name
-              </label>
-            </div>
-            {/* Username input */}
-            <div className="form-outline mb-4">
-              <input type="text" id="registerUsername" className="form-control" />
-              <label className="form-label" htmlFor="registerUsername">
-                Username
-              </label>
-            </div>
-            {/* Email input */}
-            <div className="form-outline mb-4">
-              <input type="email" id="registerEmail" className="form-control" />
-              <label className="form-label" htmlFor="registerEmail">
-                Email
-              </label>
-            </div>
-            {/* Password input */}
-            <div className="form-outline mb-4">
-              <input
-                type="password"
-                id="registerPassword"
-                className="form-control"
-              />
-              <label className="form-label" htmlFor="registerPassword">
-                Password
-              </label>
-            </div>
-            {/* Repeat Password input */}
-            <div className="form-outline mb-4">
-              <input
-                type="password"
-                id="registerRepeatPassword"
-                className="form-control"
-              />
-              <label className="form-label" htmlFor="registerRepeatPassword">
-                Repeat password
-              </label>
-            </div>
-            {/* Checkbox */}
-            <div className="form-check d-flex justify-content-center mb-4">
-              <input
-                className="form-check-input me-2"
-                type="checkbox"
-                defaultValue=""
-                id="registerCheck"
-                defaultChecked=""
-                aria-describedby="registerCheckHelpText"
-              />
-              <label className="form-check-label" htmlFor="registerCheck">
-                I have read and agree to the terms
-              </label>
-            </div>
-            {/* Submit button */}
-            <button type="submit" className="btn btn-primary btn-lg" disabled={signupForm.isSubmitting} >
-              {signupForm.isSubmitting ? <span className="spinner-border spinner-border-sm"></span> : null}
-              &nbsp;&nbsp;Submit
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-      {/* Pills content */}
-    </>
+    </div>
+    {/* Jumbotron */}
+  </section>
+  {/* Section: Design Block */}
+</>
+
+      
 
   )
 }

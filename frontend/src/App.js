@@ -3,8 +3,10 @@ import './App.css';
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import Main from "./components/main";
 import Home from "./components/main/Home";
+import About from "./components/main/About";
 import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
+import Login from "./components/main/Login";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path='home' element={<Home />}/>
           <Route path='Signup' element={<Signup/>}/>
           <Route path='navbar' element={<Navbar/>}/>
+          <Route path='Login' element={<Login/>}/>
+          <Route path='About' element={<About/>}/>
 
         </Route>
         
