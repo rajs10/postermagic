@@ -7,7 +7,7 @@ const Carousel = () => {
         {/* Carousel wrapper */}
         <div
           id="carouselBasicExample"
-          className="carousel slide carousel-fade my-3"
+          className="carousel slide carousel-fade"
           data-mdb-ride="carousel"
         >
           {/* Indicators */}

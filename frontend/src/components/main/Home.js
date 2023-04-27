@@ -7,9 +7,12 @@ import Team from "./Team";
 const Home = () => {
   return (
     <>
+      <Carousel />
+      
+      <OpenCamera />
       <div className="container">
-        <Carousel />
-        <OpenCamera />
+        
+        
         <Team />
       </div>
       <div>

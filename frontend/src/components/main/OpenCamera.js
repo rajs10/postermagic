@@ -3,7 +3,8 @@ import React from "react";
 function OpenCamera() {
   return (
     <>
-      <div className="container py-5">
+      <div className='fluid-container bg-dark '>
+      <div className="container py-5 text-light my-1">
         <div className="row mb-4 align-items-center flex-lg-row-reverse">
           <div className="col-md-6 col-xl-7 mb-4 mb-lg-0 " style={{}}>
             {/* requires glightbox, please flag the option in the picostrap customizer panel*/}
@@ -60,7 +61,7 @@ function OpenCamera() {
           </div>
           {/* /col */}
         </div>
-      </div>
+      </div></div>
     </>
   );
 }

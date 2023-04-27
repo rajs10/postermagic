@@ -50,9 +50,7 @@ function Footer() {
                     Company name
                   </h6>
                   <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
+                    Augmented Reality
                   </p>
                 </div>
                 {/* Grid column */}
@@ -142,7 +140,7 @@ function Footer() {
           >
             © 2021 Copyright:
             <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              MDBootstrap.com
+              PosterMagic
             </a>
           </div>
           {/* Copyright */}
