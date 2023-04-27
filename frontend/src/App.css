@@ -1,0 +1,13 @@
+.myclass {
+  font-weight: bold;
+  font-size: 50px;
+  color: red;
+}
+
+
+.nav-item .active{
+  font-weight: bold;
+  color: blueviolet !important;
+  border-bottom: 2px solid blueviolet;
+  max-width: fit-content;
+}
