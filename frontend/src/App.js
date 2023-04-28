@@ -7,6 +7,7 @@ import About from "./components/main/About";
 import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
 import Login from "./components/main/Login";
+import ARViewer from './components/main/ARViewer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='navbar' element={<Navbar/>}/>
           <Route path='Login' element={<Login/>}/>
           <Route path='About' element={<About/>}/>
+          <Route path='arviewer' element={<ARViewer/>}/>
 
         </Route>
         
