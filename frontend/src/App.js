@@ -24,6 +24,9 @@ function App() {
           <Route path='Login' element={<Login/>}/>
           <Route path='About' element={<About/>}/>
           <Route path='arviewer' element={<ARViewer/>}/>
+          <Route path='index' element={<index/>}/>
+          <Route path='managemarkers' element={<ManageMarker/>}/>
+          <Route path='managevideos' element={<ManageVideos/>}/>
 
         </Route>
         
