@@ -8,6 +8,8 @@ import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
 import Login from "./components/main/Login";
 import ARViewer from './components/main/ARViewer';
+import ManageMarkers from './user/ManageMarkers';
+import ManageVideos from './user/ManageVideos';
 
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
           <Route path='About' element={<About/>}/>
           <Route path='arviewer' element={<ARViewer/>}/>
           <Route path='index' element={<index/>}/>
-          <Route path='managemarkers' element={<ManageMarker/>}/>
+          <Route path='managemarkers' element={<ManageMarkers/>}/>
           <Route path='managevideos' element={<ManageVideos/>}/>
 
         </Route>
