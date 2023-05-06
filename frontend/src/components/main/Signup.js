@@ -63,106 +63,208 @@ return (
     style={{
       minHeight: '100vh',
       backgroundImage:
-        'url("https://mdbootstrap.com/img/new/fluid/city/018.jpg")',
+        'url("https://i.pinimg.com/736x/86/cf/48/86cf488c0f2f0b5ddc1e36bd45c86e5c.jpg")',
     }}
   >
-    <div className="container h-100">
-        <div className="row d-flex justify-content-center align-items-center h-100">
-          <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div className="card" style={{ borderRadius: 15 }}>
-              <div className="card-body p-5">
-                <h2 className="text-uppercase text-center mb-5">
-                  Create an account
-                </h2>
-                <form onSubmit={signupForm.handleSubmit}>
-                  <div className=" mb-4">
-                    <label className="form-label" htmlFor="form3Example1cg">
-                      Your Name
-                    </label>
+<section className="h-100 ">
+  <div className="container py-5 h-100">
+    <div className="row d-flex justify-content-center align-items-center h-100">
+      <div className="col">
+        <div className="card card-registration my-4">
+          <div className="row g-0">
+            <div className="col-xl-6 d-none d-xl-block">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                alt="Sample photo"
+                className="img-fluid"
+                style={{
+                  borderTopLeftRadius: ".25rem",
+                  borderBottomLeftRadius: ".25rem"
+                }}
+              />
+            </div>
+            <div className="col-xl-6">
+              <div className="card-body p-md-5 text-black">
+                <h3 className="mb-5 text-uppercase">
+                  Student registration form
+                </h3>
+                <div className="row">
+                  <div className="col-md-6 mb-4">
+                    <div className="   ">
+                      <input
+                        type="text"
+                        id="form3Example1m"
+                        className="form-control form-control-lg"
+                      />
+                      <label className="form-label" htmlFor="form3Example1m">
+                        First name
+                      </label>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="   ">
+                      <input
+                        type="text"
+                        id="form3Example1n"
+                        className="form-control form-control-lg"
+                      />
+                      <label className="form-label" htmlFor="form3Example1n">
+                        Last name
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6 mb-4">
+                    <div className="   ">
+                      <input
+                        type="text"
+                        id="form3Example1m1"
+                        className="form-control form-control-lg"
+                      />
+                      <label className="form-label" htmlFor="form3Example1m1">
+                        Mother's name
+                      </label>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="   ">
+                      <input
+                        type="text"
+                        id="form3Example1n1"
+                        className="form-control form-control-lg"
+                      />
+                      <label className="form-label" htmlFor="form3Example1n1">
+                        Father's name
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="text"
+                    id="form3Example8"
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example8">
+                    Address
+                  </label>
+                </div>
+                <div className="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                  <h6 className="mb-0 me-4">Gender: </h6>
+                  <div className="form-check form-check-inline mb-0 me-4">
                     <input
-                      type="text"
-                      id="name"
-                      value={signupForm.values.name}
-                      onChange={signupForm.handleChange}
-                      className="form-control form-control-lg"
+                      className="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="femaleGender"
+                      defaultValue="option1"
                     />
-                    <span className="text-danger">{signupForm.errors.name}</span>
-                  </div>
-                  <div className=" mb-4">
-                    <label className="form-label" htmlFor="form3Example3cg">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={signupForm.values.email}
-                      onChange={signupForm.handleChange}
-                      className="form-control form-control-lg"
-                    />
-                  </div>
-                  <div className=" mb-4">
-                    <label className="form-label" htmlFor="form3Example4cg">
-                      Password
-                    </label>
-                    <input
-                      type="password"
-                      id="password"
-                      value={signupForm.values.password}
-                      onChange={signupForm.handleChange}
-                      className="form-control form-control-lg"
-                    />
-                  </div>
-                  <div className=" mb-4">
-                    <label className="form-label" htmlFor="form3Example4cdg">
-                      confirm password
-                    </label>
-                    <input
-                      type="password"
-                      id="cPassword"
-                      value={signupForm.values.cPassword}
-                      onChange={signupForm.handleChange}
-                      className="form-control form-control-lg"
-                    />
-                  </div>
-                  <div className="form-check d-flex justify-content-center mb-5">
-                    <input
-                      className="form-check-input me-2"
-                      type="checkbox"
-                      defaultValue=""
-                      id="form2Example3cg"
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="form2Example3g"
-                    >
-                      I agree all statements in{" "}
-                      <a href="#!" className="text-body">
-                        <u>Terms of service</u>
-                      </a>
+                    <label className="form-check-label" htmlFor="femaleGender">
+                      Female
                     </label>
                   </div>
-                  <div className="d-flex justify-content-center">
-                    <button
-                      type="submit"
-                      className="btn btn-success btn-block btn-lg"
-                      disabaled={signupForm.isSubmitting}
-
-                    >{ signupForm.isSubmitting && <span className="spinner-border spinner-border-sm"></span>}
-                      Register
-                    </button>
+                  <div className="form-check form-check-inline mb-0 me-4">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="maleGender"
+                      defaultValue="option2"
+                    />
+                    <label className="form-check-label" htmlFor="maleGender">
+                      Male
+                    </label>
                   </div>
-                  <p className="text-center text-muted mt-5 mb-0">
-                    Have already an account?{" "}
-                    <a href="#!" className="fw-bold text-body">
-                      <u>Login here</u>
-                    </a>
-                  </p>
-                </form>
+                  <div className="form-check form-check-inline mb-0">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="otherGender"
+                      defaultValue="option3"
+                    />
+                    <label className="form-check-label" htmlFor="otherGender">
+                      Other
+                    </label>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6 mb-4">
+                    <select className="select">
+                      <option value={1}>State</option>
+                      <option value={2}>Option 1</option>
+                      <option value={3}>Option 2</option>
+                      <option value={4}>Option 3</option>
+                    </select>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <select className="select">
+                      <option value={1}>City</option>
+                      <option value={2}>Option 1</option>
+                      <option value={3}>Option 2</option>
+                      <option value={4}>Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="text"
+                    id="form3Example9"
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example9">
+                    DOB
+                  </label>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="text"
+                    id="form3Example90"
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example90">
+                    Pincode
+                  </label>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="text"
+                    id="form3Example99"
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example99">
+                    Course
+                  </label>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="text"
+                    id="form3Example97"
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example97">
+                    Email ID
+                  </label>
+                </div>
+                <div className="d-flex justify-content-end pt-3">
+                  <button type="button" className="btn btn-light btn-lg">
+                    Reset all
+                  </button>
+                  <button type="button" className="btn btn-warning btn-lg ms-2">
+                    Submit form
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
   </section>
 );
 };
