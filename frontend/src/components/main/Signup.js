@@ -59,14 +59,14 @@ const signupForm = useFormik({
 
 return (
   <section
-    className="vh-100 bg-image"
+    className="bg-image py-5"
     style={{
+      minHeight: '100vh',
       backgroundImage:
-        'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")',
+        'url("https://mdbootstrap.com/img/new/fluid/city/018.jpg")',
     }}
   >
-    <div className="mask d-flex align-items-center h-100 gradient-custom-3">
-      <div className="container h-100">
+    <div className="container h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-12 col-md-9 col-lg-7 col-xl-6">
             <div className="card" style={{ borderRadius: 15 }}>
@@ -144,7 +144,7 @@ return (
                   <div className="d-flex justify-content-center">
                     <button
                       type="submit"
-                      className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      className="btn btn-success btn-block btn-lg"
                       disabaled={signupForm.isSubmitting}
 
                     >{ signupForm.isSubmitting && <span className="spinner-border spinner-border-sm"></span>}
@@ -163,7 +163,6 @@ return (
           </div>
         </div>
       </div>
-    </div>
   </section>
 );
 };

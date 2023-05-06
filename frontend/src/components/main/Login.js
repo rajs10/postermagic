@@ -39,13 +39,14 @@ const Login = () => {
 });
   return (
     <>
-      <section className="vh-100 gradient-custom">
+      <section className="login-bg"
+      style={{ backgroundImage: "url('https://e1.pxfuel.com/desktop-wallpaper/581/154/desktop-wallpaper-backgrounds-for-login-page-login-page.jpg')"}}>
   <div className="container py-5 h-100">
     <div className="row d-flex justify-content-center align-items-center h-100">
       <div className="col-12 col-md-8 col-lg-6 col-xl-5">
         <div
-          className="card bg-dark text-light"
-          style={{ borderRadius: "1rem" }}
+          className="card text-light"
+          style={{ borderRadius: "1rem",backgroundColor:"yellow" }}
         >
           <div className="card-body p-5 text-white">
             <form>
@@ -65,14 +66,14 @@ const Login = () => {
                 />
               </div>
               <div className="form-label mb-4">
+              <label className="form-label text-white" htmlFor="typePasswordX">
+                  Password
+                </label>
                 <input
                   type="password"
                   id="typePasswordX"
                   className="form-control form-control-lg"
                 />
-                <label className="form-label" htmlFor="typePasswordX">
-                  Password
-                </label>
               </div>
               <p className="small mb-5 pb-lg-2">
                 <a className="text-dark-50" href="#!">
