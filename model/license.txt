@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pokemon RSE - Pokemon Center
+* source:	https://sketchfab.com/3d-models/pokemon-rse-pokemon-center-ae2858d8d212406ebe95927d4f17d328
+* author:	Wesai (https://sketchfab.com/Wesai)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pokemon RSE - Pokemon Center" (https://sketchfab.com/3d-models/pokemon-rse-pokemon-center-ae2858d8d212406ebe95927d4f17d328) by Wesai (https://sketchfab.com/Wesai) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
