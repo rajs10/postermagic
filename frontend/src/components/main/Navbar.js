@@ -9,7 +9,14 @@ const Navbar = () => {
         {/* Container wrapper */}
         <div className="container">
           {/* Navbar brand */}
-
+          <a className="navbar-brand" href="#">
+        <img
+          src="/images/ar.png"
+          height={50}
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
           {/* Toggle button */}
           <button
             className="navbar-toggler"
