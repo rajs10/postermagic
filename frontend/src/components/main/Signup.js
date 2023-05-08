@@ -90,7 +90,7 @@ return (
                   Create Your Account
                 </h3>
                 <div className="row">
-                  <div className="col-md-6 mb-4">
+                  <div className=" mb-4">
                     <div className="   ">
                       <input
                         type="text"
@@ -104,24 +104,10 @@ return (
                       </label>
                     </div>
                   </div>
-                  <div className="col-md-6 mb-4">
-                    <div className="   ">
-                    </div>
-                  </div>
+                  
                 </div>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <div className="   ">
-                    </div>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <div className="   ">
-                    
-              
-                    </div>
-                  </div>
-                </div>
-                <div className="    mb-4">
+                
+                <div className=" mb-4">
                   <input
                     type="email"
                     id="email"
@@ -155,18 +141,10 @@ return (
                     className="form-control form-control-lg"
                   />
                   <label className="form-label" htmlFor="form3Example9">
-                    Password
+                    Confirm Password
                   </label>
                 </div>
                 <div className="    mb-4">
-                  <input
-                    type="text"
-                    id="form3Example90"
-                    className="form-control form-control-lg"
-                  />
-                  <label className="form-label" htmlFor="form3Example90">
-                    Pincode
-                  </label>
                 </div>
                 <div className="    mb-4">
                   
