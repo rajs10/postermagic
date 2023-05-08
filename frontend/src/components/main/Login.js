@@ -5,8 +5,8 @@ import Swal from "sweetalert2";
 const Login = () => {
   const loginForm = useFormik({
     initialValues: {
-      Email: "",
-      Password: "",
+      email: "",
+      password: "",
     },
     onSubmit: async (values) => {
       console.log(values);
@@ -49,7 +49,7 @@ const Login = () => {
           style={{ borderRadius: "1rem",backgroundColor:"black",boxShadow:"2px 2px 10px 8px black" }}
         >
           <div className="card-body p-5 text-white">
-            <form>
+            <form onSubmit={loginForm.handleSubmit}>
             <div className="mb-md-5 mt-md-4 pb-5">
               <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
               <p className="text-white-50 mb-5">
@@ -61,7 +61,9 @@ const Login = () => {
                 </label>
                 <input
                   type="email"
-                  id="typeEmailX"
+                  id="email"
+                  value={loginForm.values.email}
+                  onChange={loginForm.handleChange}
                   className="form-control form-control-lg"
                 />
               </div>
@@ -71,7 +73,9 @@ const Login = () => {
                 </label>
                 <input
                   type="password"
-                  id="typePasswordX"
+                  id="password"
+                  value={loginForm.values.password}
+                  onChange={loginForm.handleChange}
                   className="form-control form-control-lg"
                 />
               </div>
