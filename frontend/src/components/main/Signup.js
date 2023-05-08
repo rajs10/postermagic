@@ -54,7 +54,7 @@ const signupForm = useFormik({
           }           
       
     },
-    validationSchema:SignupSchema
+    // validationSchema:SignupSchema
 });
 
 return (
@@ -85,6 +85,7 @@ return (
             </div>
             <div className="col-xl-6">
               <div className="card-body p-md-5 text-black">
+                <form onSubmit={signupForm.handleSubmit}>
                 <h3 className="mb-5 text-uppercase">
                   Create Your Account
                 </h3>
@@ -93,24 +94,18 @@ return (
                     <div className="   ">
                       <input
                         type="text"
-                        id="form3Example1m"
+                        id="name"
+                        value={signupForm.values.name}
+                        onChange={signupForm.handleChange}
                         className="form-control form-control-lg"
                       />
                       <label className="form-label" htmlFor="form3Example1m">
-                        First name
+                        Full Name
                       </label>
                     </div>
                   </div>
                   <div className="col-md-6 mb-4">
                     <div className="   ">
-                      <input
-                        type="text"
-                        id="form3Example1n"
-                        className="form-control form-control-lg"
-                      />
-                      <label className="form-label" htmlFor="form3Example1n">
-                        Last name
-                      </label>
                     </div>
                   </div>
                 </div>
@@ -128,79 +123,39 @@ return (
                 </div>
                 <div className="    mb-4">
                   <input
-                    type="text"
-                    id="form3Example8"
+                    type="email"
+                    id="email"
+                        value={signupForm.values.email}
+                        onChange={signupForm.handleChange}
                     className="form-control form-control-lg"
                   />
                   <label className="form-label" htmlFor="form3Example8">
-                    Address
+                    Email
                   </label>
                 </div>
-                <div className="d-md-flex justify-content-start align-items-center mb-4 py-2">
-                  <h6 className="mb-0 me-4">Gender: </h6>
-                  <div className="form-check form-check-inline mb-0 me-4">
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="femaleGender"
-                      defaultValue="option1"
-                    />
-                    <label className="form-check-label" htmlFor="femaleGender">
-                      Female
-                    </label>
-                  </div>
-                  <div className="form-check form-check-inline mb-0 me-4">
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="maleGender"
-                      defaultValue="option2"
-                    />
-                    <label className="form-check-label" htmlFor="maleGender">
-                      Male
-                    </label>
-                  </div>
-                  <div className="form-check form-check-inline mb-0">
-                    <input
-                      className="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="otherGender"
-                      defaultValue="option3"
-                    />
-                    <label className="form-check-label" htmlFor="otherGender">
-                      Other
-                    </label>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <select className="select">
-                      <option value={1}>State</option>
-                      <option value={2}>Option 1</option>
-                      <option value={3}>Option 2</option>
-                      <option value={4}>Option 3</option>
-                    </select>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <select className="select">
-                      <option value={1}>City</option>
-                      <option value={2}>Option 1</option>
-                      <option value={3}>Option 2</option>
-                      <option value={4}>Option 3</option>
-                    </select>
-                  </div>
-                </div>
+                
                 <div className="    mb-4">
                   <input
-                    type="text"
-                    id="form3Example9"
+                    type="password"
+                    id="password"
+                        value={signupForm.values.password}
+                        onChange={signupForm.handleChange}
                     className="form-control form-control-lg"
                   />
                   <label className="form-label" htmlFor="form3Example9">
-                    DOB
+                    Password
+                  </label>
+                </div>
+                <div className="    mb-4">
+                  <input
+                    type="password"
+                    id="cPassword"
+                        value={signupForm.values.cPassword}
+                        onChange={signupForm.handleChange}
+                    className="form-control form-control-lg"
+                  />
+                  <label className="form-label" htmlFor="form3Example9">
+                    Password
                   </label>
                 </div>
                 <div className="    mb-4">
@@ -216,24 +171,15 @@ return (
                 <div className="    mb-4">
                   
                 </div>
-                <div className="    mb-4">
-                  <input
-                    type="text"
-                    id="form3Example97"
-                    className="form-control form-control-lg"
-                  />
-                  <label className="form-label" htmlFor="form3Example97">
-                    Email ID
-                  </label>
-                </div>
                 <div className="d-flex justify-content-end pt-3">
                   <button type="button" className="btn btn-light btn-lg">
                     Reset all
                   </button>
-                  <button type="button" className="btn btn-warning btn-lg ms-2">
+                  <button type="submit" className="btn btn-warning btn-lg ms-2">
                     Submit form
                   </button>
                 </div>
+                </form>
               </div>
             </div>
           </div>
