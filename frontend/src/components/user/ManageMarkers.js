@@ -12,22 +12,22 @@ const ManageMarkers = () => {
     const fd = new FormData();
     fd.append("myfile", file);
     fetch(url + "/util/uploadfile", {
-      method: "POST",
-      body: fd,
+        method: "POST",
+        body: fd,
     }).then((res) => {
-      if (res.status === 200) {
-        console.log("file uploaded");
-        Swal.fire({
-          title: 'Success',
-          icon: 'success',
-          text: "Image Uploaded"
-        })
-        // console.log(file.name);
-        // console.log(file);
-        setImageData(file.name);
-      }
+        if (res.status === 200) {
+            console.log("file uploaded");
+            Swal.fire({
+              title: 'Success',
+              icon : 'success',
+              text : "Image Uploaded"
+            })
+            // console.log(file.name);
+            // console.log(file);
+            setImageData(file.name);
+        }
     });
-  };
+};
 
 
 
@@ -38,12 +38,12 @@ const ManageMarkers = () => {
   return (
     <div>
 
-      <div className="">
-        <label className="form-label" htmlFor="form12">
-          Example label
-        </label>
-        <input type="file" id="image" className="form-control" onChange={uploadFile} />
-      </div>
+<div className="">
+  <label className="form-label" htmlFor="form12">
+    Example label
+  </label>
+  <input type="file" id="image" className="form-control" onChange={uploadFile}/>
+</div>
 
     </div>
   )
