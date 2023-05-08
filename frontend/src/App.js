@@ -8,6 +8,8 @@ import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
 import Login from "./components/main/Login";
 import ARViewer from './components/main/ARViewer';
+import Managemarkers from './components/main/Managemarkers';
+
 
 
 function App() {
