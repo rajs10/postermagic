@@ -86,7 +86,7 @@ return (
             <div className="col-xl-6">
               <div className="card-body p-md-5 text-black">
                 <h3 className="mb-5 text-uppercase">
-                  Student registration form
+                  Create Your Account
                 </h3>
                 <div className="row">
                   <div className="col-md-6 mb-4">
@@ -117,26 +117,12 @@ return (
                 <div className="row">
                   <div className="col-md-6 mb-4">
                     <div className="   ">
-                      <input
-                        type="text"
-                        id="form3Example1m1"
-                        className="form-control form-control-lg"
-                      />
-                      <label className="form-label" htmlFor="form3Example1m1">
-                        Mother's name
-                      </label>
                     </div>
                   </div>
                   <div className="col-md-6 mb-4">
                     <div className="   ">
-                      <input
-                        type="text"
-                        id="form3Example1n1"
-                        className="form-control form-control-lg"
-                      />
-                      <label className="form-label" htmlFor="form3Example1n1">
-                        Father's name
-                      </label>
+                    
+              
                     </div>
                   </div>
                 </div>
@@ -228,14 +214,7 @@ return (
                   </label>
                 </div>
                 <div className="    mb-4">
-                  <input
-                    type="text"
-                    id="form3Example99"
-                    className="form-control form-control-lg"
-                  />
-                  <label className="form-label" htmlFor="form3Example99">
-                    Course
-                  </label>
+                  
                 </div>
                 <div className="    mb-4">
                   <input
@@ -270,3 +249,4 @@ return (
 };
 
 export default Signup;
+
