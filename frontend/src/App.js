@@ -8,8 +8,9 @@ import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
 import Login from "./components/main/Login";
 import ARViewer from './components/main/ARViewer';
-import Managemarkers from './components/main/Managemarkers';
-
+import ManageMarkers from './components/user/ManageMarkers';
+import ManageVideos from './components/user/ManageVideos';
+import User from './components/user';
 
 
 function App() {
@@ -17,27 +18,29 @@ function App() {
     <div>
       <BrowserRouter>
 
-      <Routes>
-        <Route path='/' element={<Navigate to="/main/home"/>}/>
-        <Route path='main' element={<Main/>}>
-          <Route path='home' element={<Home />}/>
-          <Route path='Signup' element={<Signup/>}/>
-          <Route path='navbar' element={<Navbar/>}/>
-          <Route path='Login' element={<Login/>}/>
-          <Route path='About' element={<About/>}/>
-          <Route path='arviewer' element={<ARViewer/>}/>
-          <Route path='index' element={<index/>}/>
-          <Route path='managemarkers' element={<ManageMarker/>}/>
-          <Route path='managevideos' element={<ManageVideos/>}/>
+        <Routes>
+          <Route path='/' element={<Navigate to="/main/home" />} />
+          <Route path='main' element={<Main />}>
+            <Route path='home' element={<Home />} />
+            <Route path='Signup' element={<Signup />} />
+            <Route path='navbar' element={<Navbar />} />
+            <Route path='Login' element={<Login />} />
+            <Route path='About' element={<About />} />
+            <Route path='arviewer' element={<ARViewer />} />
+            <Route path='index' element={<index />} />
 
-        </Route>
-        
+          </Route>
+          <Route path='user' element={<User />}>
+            <Route path='managemarkers' element={<ManageMarkers />} />
+            <Route path='managevideos' element={<ManageVideos />} />
+          </Route>
 
-          
-          
-          
-          
-      </Routes>
+
+
+
+
+
+        </Routes>
       </BrowserRouter>
     </div>
   );
