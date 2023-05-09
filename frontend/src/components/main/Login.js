@@ -45,20 +45,20 @@ const Login = () => {
   return (
     <>
       <section className="login-bg"
-        style={{ backgroundImage: "url('https://img.freepik.com/premium-vector/low-poly-virtual-reality-helmet-future-innovation-technology-fantasy-polygonal-triangle-connected-dots-geometric-point-line-vr-headset-glass-device-concept-blue-vector-illustration-art_115739-1678.jpg')" }}>
+        style={{ backgroundImage: "url('/images/0F.png')" }}>
         <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-right align-items-center h-100">
+          <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
               <div
                 className="card text-light"
                 style={{ borderRadius: "1rem", backgroundColor: "black"}}
               >
-                <div className="card-body p-5 text-white">
+                <div className="card-body p-5 text-white login" style={{border:"2px solid red"}}>
                   <form onSubmit={loginForm.handleSubmit}>
                     <div className="mb-md-5 mt-md-4 pb-5">
                       <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
                       <p className="text-white-50 mb-5">
-                        Please enter your login and password!
+                        Please enter your Email and password!
                       </p>
                       <div className="form-dark mb-4">
                         <label className="form-label text-white" htmlFor="typeEmailX">
@@ -107,22 +107,22 @@ const Login = () => {
                         </a>
                       </div>
                     </div>
-                  </form>
+                    </form>
                   <div>
                     <p className="mb-0">
                       Don't have an account?{" "}
-                      <a href="#!" className="text-white-50 fw-bold">
+                      <a href="Signup" className="text-white-30 fw-bold">
                         Sign Up
                       </a>
                     </p>
                   </div>
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </>
   );
 };

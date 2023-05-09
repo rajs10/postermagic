@@ -17,3 +17,8 @@
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+.login{
+  color: black;
+  backdrop-filter: blur(7px);
+}

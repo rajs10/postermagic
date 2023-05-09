@@ -86,7 +86,7 @@ return (
             <div className="col-xl-6">
               <div className="card-body p-md-5 text-black">
                 <form onSubmit={signupForm.handleSubmit}>
-                <h3 className="mb-5 text-uppercase">
+                <h3 className="mb-5 text-uppercase text-center">
                   Create Your Account
                 </h3>
                 <div className="row">
@@ -156,7 +156,14 @@ return (
                   <button type="submit" className="btn btn-warning btn-lg ms-2">
                     Submit form
                   </button>
+
                 </div>
+                <p className="mt-5">
+                      Have an account?{" "}
+                      <a href="Login" className="text-dark-50 fw-bold">
+                        Login
+                      </a>
+                    </p>
                 </form>
               </div>
             </div>
