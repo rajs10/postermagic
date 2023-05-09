@@ -34,6 +34,7 @@ function App() {
               <Route path='index' element={<index />} />
             </Route>
             <Route path='user' element={<UserAuth> <User /> </UserAuth>}>
+            {/* <Route path='user' element={ <User /> }> */}
               <Route path='managemarkers' element={<ManageMarkers />} />
               <Route path='managevideos' element={<ManageVideos />} />
             </Route>

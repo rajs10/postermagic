@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const Model = require('../models/userModels');
+const Model = require('../Models/imageModel');
 
 router.post('/add', (req, res) => {
     //get data from client
