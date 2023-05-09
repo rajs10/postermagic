@@ -42,8 +42,9 @@ const ManageVideos = () => {
         <label className="form-label" htmlFor="form12">
           Example label
         </label>
-        <input type="file" id="image" className="form-control" onChange={uploadFile} />
-
+        {/* <input type="file" id="image" className="form-control" onChange={uploadFile} /> */}
+        <input type="file" id="image" className="form-control w-25" onChange={uploadFile} />
+        
         
 
       </div>
