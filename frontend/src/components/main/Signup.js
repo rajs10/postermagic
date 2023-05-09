@@ -156,8 +156,13 @@ return (
                   <button type="submit" className="btn btn-warning btn-lg ms-2">
                     Submit
                   </button>
-                  
                 </div>
+                <p className="mt-5">
+                      Have an account?{" "}
+                      <a href="Login" className="text-dark-50 fw-bold">
+                        Login
+                      </a>
+                    </p>
                 </form>
               </div>
             </div>
