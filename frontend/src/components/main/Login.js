@@ -2,8 +2,13 @@ import { useFormik } from "formik";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useUserContext } from "../../context/UserProvider";
 
 const Login = () => {
+
+  const { loggedIn, setLoggedIn } = useUserContext();
+
+
   const navigate = useNavigate();
   const loginForm = useFormik({
     initialValues: {
@@ -30,9 +35,12 @@ const Login = () => {
           title: "Nice",
           text: "You have successfully logged in",
         });
+        setLoggedIn(true)
         const data = await res.json();
         sessionStorage.setItem('user', JSON.stringify(data));
+
         navigate('/user/managevideos')
+        
       } else if (res.status === 401) {
         Swal.fire({
           icon: "error",
