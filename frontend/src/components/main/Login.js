@@ -45,13 +45,13 @@ const Login = () => {
   return (
     <>
       <section className="login-bg"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586191582151-f73872dfd183?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80')" }}>
+        style={{ backgroundImage: "url('https://img.freepik.com/premium-vector/low-poly-virtual-reality-helmet-future-innovation-technology-fantasy-polygonal-triangle-connected-dots-geometric-point-line-vr-headset-glass-device-concept-blue-vector-illustration-art_115739-1678.jpg')" }}>
         <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="row d-flex justify-content-right align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
               <div
                 className="card text-light"
-                style={{ borderRadius: "1rem", backgroundColor: "black", boxShadow: "2px 2px 10px 8px black" }}
+                style={{ borderRadius: "1rem", backgroundColor: "black"}}
               >
                 <div className="card-body p-5 text-white">
                   <form onSubmit={loginForm.handleSubmit}>
