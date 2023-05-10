@@ -92,6 +92,16 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link" to="/user/managemarker">
+                  ManageMarker
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/user/managevideo">
+                  ManageVideo
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/main/about">
                   About
                 </NavLink>
