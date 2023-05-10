@@ -22,3 +22,9 @@
   color: black;
   backdrop-filter: blur(7px);
 }
+
+.upload-label{
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
