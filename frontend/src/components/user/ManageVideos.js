@@ -94,14 +94,15 @@ const ManageVideos = () => {
       <div style={{ backgroundImage: "url(https://academiccollegeprojects.com/wp-content/uploads/2015/07/Augmeneted-Reality-Projects-for-Engineering-students-support-panel.jpg)", backgroundSize:'cover', backgroundRepeat:'no-repeat' }}>
 
         <div className='container'>
-
-          <div className="">
-            <label className="form-label" htmlFor="form12">
-              Example label
+        <div className="card mb-3">
+          <div className="card-body">
+            <label className="form-label upload-label" htmlFor="image">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Manage Video
             </label>
-            {/* <input type="file" id="image" className="form-control" onChange={uploadFile} /> */}
-            <input type="file" id="video" onChange={uploadFile} />
+            <input hidden type="file" id="image" onChange={uploadFile} />
+
           </div>
+        </div>
           <section style={{ backgroundColor: "#eee" }}>
             <div className="container py-5">
               <h4 className="text-center mb-5">

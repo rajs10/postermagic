@@ -13,7 +13,7 @@ router.post('/add', (req, res) => {
         })
         .catch((err) => {
             console.error(err);
-            res.status(500).json(result);
+            res.status(500).json(err);
 
 
         });
