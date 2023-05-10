@@ -8,47 +8,47 @@ const Navbar = () => {
 
   const showLoggedIn = () => {
     if (!loggedIn) {
-        return (
-            // <ul className="navbar-nav">
-            <>
-                {/* <li className="nav-item"> */}
-                    <NavLink className="nav-link" aria-current="page" to="/main/login">
-
-                        <button type="button" className="btn btn-primary me-3 mb-1">
-                            Login
-                        </button>
-                    </NavLink>
-                {/* </li> */}
-                {/* <li className="nav-item"> */}
-                    <NavLink className="nav-link" aria-current="page" to="/main/signup">
-                        <button type="button" className="btn btn-primary me-3 mb-1">
-                            SignUp
-                        </button>
-                    </NavLink>
-                {/* </li> */}
-            </>
-            // </ul >
-
-        );
-    }
-}
-
-const showLogout = () => {
-  if (loggedIn) {
       return (
-          <ul className="navbar-nav">
-              {/* // <li className="nav-item"> */}
-                  {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
+        // <ul className="navbar-nav">
+        <>
+          {/* <li className="nav-item"> */}
+          <NavLink className="nav-link" aria-current="page" to="/main/login">
+
+            <button type="button" className="btn btn-primary me-3 mb-1">
+              Login
+            </button>
+          </NavLink>
+          {/* </li> */}
+          {/* <li className="nav-item"> */}
+          <NavLink className="nav-link" aria-current="page" to="/main/signup">
+            <button type="button" className="btn btn-primary me-3 mb-1">
+              SignUp
+            </button>
+          </NavLink>
+          {/* </li> */}
+        </>
+        // </ul >
+
+      );
+    }
+  }
+
+  const showLogout = () => {
+    if (loggedIn) {
+      return (
+        <ul className="navbar-nav">
+          {/* // <li className="nav-item"> */}
+          {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
                   Logout
               </button> */}
-                  <button type="button" className="btn btn-primary me-3 mb-2" onClick={logout}>
-                      LogOut
-                  </button>
-              {/* // </li> */}
-          </ul>
+          <button type="button" className="btn btn-primary me-3 mb-2" onClick={logout}>
+            LogOut
+          </button>
+          {/* // </li> */}
+        </ul>
       );
+    }
   }
-}
 
 
 
@@ -69,13 +69,13 @@ const showLogout = () => {
         <div className="container">
           {/* Navbar brand */}
           <a className="navbar-brand" href="#">
-        <img
-          src="/images/ar.png"
-          height={50}
-          alt="MDB Logo"
-          loading="lazy"
-        />
-      </a>
+            <img
+              src="/images/ar.png"
+              height={50}
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
           {/* Toggle button */}
           <button
             className="navbar-toggler"
@@ -100,6 +100,16 @@ const showLogout = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/main/about">
                   About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/user/managevideos">
+                  ManageVideo
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/user/managemarkers">
+                  ManageMarker
                 </NavLink>
               </li>
             </ul>

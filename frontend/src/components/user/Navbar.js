@@ -92,12 +92,12 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/user/managemarker">
+                <NavLink className="nav-link" to="/user/managemarkers">
                   ManageMarker
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/user/managevideo">
+                <NavLink className="nav-link" to="/user/managevideos">
                   ManageVideo
                 </NavLink>
               </li>
