@@ -94,11 +94,13 @@ const ManageVideos = () => {
       <div className='container'>
 
         <div className="">
-          <label className="form-label" htmlFor="form12">
-            Example label
-          </label>
-          {/* <input type="file" id="image" className="form-control" onChange={uploadFile} /> */}
-          <input type="file" id="video" onChange={uploadFile} />
+          <>
+            <label className="form-label" htmlFor="customFile">
+              Default file input example
+            </label>
+            <input type="file" className="form-control" id="customFile" />
+          </>
+
         </div>
 
         <div>
@@ -114,7 +116,7 @@ const ManageVideos = () => {
                         alt=""
                       /> */}
                       {/* <video src={'http://localhost:5000/' + vid.video} controls />   */}
-                      <video src={'http://localhost:5000/' + vid.video} controls autoplay muted />  
+                      <video src={'http://localhost:5000/' + vid.video} controls autoplay muted />
                     </div>
                   </div>
                 </div>
@@ -128,19 +130,12 @@ const ManageVideos = () => {
       </div>
     )
   }
-
-
-
-
-
-
-
   return (
-    
 
-      <div>
-        {displayVideo()}
-      </div>
+
+    <div>
+      {displayVideo()}
+    </div>
 
   )
 }
