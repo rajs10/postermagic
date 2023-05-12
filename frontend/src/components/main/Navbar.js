@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-lightb gradient-custom ">
         {/* Container wrapper */}
         <div className="container">
           {/* Navbar brand */}
@@ -92,24 +92,24 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarButtonsExample">
             {/* Left links */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item"style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/main/home">
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/about">
-                  About
-                </NavLink>
-              </li>
-              <li className="nav-item">
+              <li className="nav-item" style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/user/managevideos">
                   ManageVideo
-                </NavLink>
+                </NavLink >
               </li>
-              <li className="nav-item">
+              <li className="nav-item"style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/user/managemarkers">
                   ManageMarker
+                </NavLink>
+              </li>
+              <li className="nav-item"style={{fontWeight:"bold"}}>
+                <NavLink className="nav-link" to="/main/about">
+                  About
                 </NavLink>
               </li>
             </ul>
