@@ -72,6 +72,21 @@ const ManageMarkers = () => {
     });
   };
 
+  const deleteMarker = async (id) => {
+    const res = await fetch(url+'/image/delete/'+id, {
+      method: 'DELETE'
+    });
+
+    if(res.status === 200){
+      fetchImage();
+      Swal.fire({
+        icon : 'success',
+        title : 'Success',
+        text : 'Deleted Successfully!'
+      })
+    }
+  }
+
 
   const fetchImage = async () => {
     setLoading(true);
@@ -109,11 +124,12 @@ const ManageMarkers = () => {
               {
                 markerList.map(marker => (
 
-                  <div className='col-md-3'>
+                  <div className='col-md-4'>
                     <div className="mb-4">
+                        <button className='btn btn-danger' onClick={e => deleteMarker(marker._id)}>Delete</button>
                       <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
                         <img
-                          src={url+"/"+marker.file}
+                          src={url+"/"+marker.image}
                           className="w-100"
                         />
                         <a href="#!">
@@ -124,7 +140,7 @@ const ManageMarkers = () => {
                             <div className="d-flex justify-content-start align-items-start h-100">
                               <h5>
                                 <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
-                                  $123
+                                  {marker.image}
                                 </span>
                               </h5>
                             </div>
