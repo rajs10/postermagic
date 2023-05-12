@@ -8,58 +8,47 @@ const Navbar = () => {
 
   const showLoggedIn = () => {
     if (!loggedIn) {
-        return (
-            // <ul className="navbar-nav">
-            <>
-                {/* <li className="nav-item"> */}
-                    <NavLink className="nav-link" aria-current="page" to="/main/login">
-
-                        <button type="button" className="btn btn-primary me-3 mb-1">
-                            Login
-                        </button>
-                    </NavLink>
-                {/* </li> */}
-                {/* <li className="nav-item"> */}
-                    <NavLink className="nav-link" aria-current="page" to="/main/signup">
-                        <button type="button" className="btn btn-primary me-3 mb-1">
-                            SignUp
-                        </button>
-                    </NavLink>
-                {/* </li> */}
-            </>
-            // </ul >
-
-        );
-    }
-}
-
-const showLogout = () => {
-  if (loggedIn) {
       return (
-          <ul className="navbar-nav">
-              {/* // <li className="nav-item"> */}
-                  {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
+        // <ul className="navbar-nav">
+        <>
+          {/* <li className="nav-item"> */}
+          <NavLink className="nav-link" aria-current="page" to="/main/login">
+
+            <button type="button" className="btn btn-primary me-3 mb-1">
+              Login
+            </button>
+          </NavLink>
+          {/* </li> */}
+          {/* <li className="nav-item"> */}
+          <NavLink className="nav-link" aria-current="page" to="/main/signup">
+            <button type="button" className="btn btn-primary me-3 mb-1">
+              SignUp
+            </button>
+          </NavLink>
+          {/* </li> */}
+        </>
+        // </ul >
+
+      );
+    }
+  }
+
+  const showLogout = () => {
+    if (loggedIn) {
+      return (
+        <ul className="navbar-nav">
+          {/* // <li className="nav-item"> */}
+          {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
                   Logout
               </button> */}
-                  <button type="button" className="btn btn-primary me-3 mb-2" onClick={logout}>
-                      LogOut
-                  </button>
-              {/* // </li> */}
-          </ul>
+          <button type="button" className="btn btn-primary me-3 mb-2" onClick={logout}>
+            LogOut
+          </button>
+          {/* // </li> */}
+        </ul>
       );
+    }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <>
@@ -68,14 +57,17 @@ const showLogout = () => {
         {/* Container wrapper */}
         <div className="container">
           {/* Navbar brand */}
-          <a className="navbar-brand" href="#">
-        <img
-          src="/images/ar.png"
-          height={50}
-          alt="MDB Logo"
-          loading="lazy"
-        />
-      </a>
+          <a className="navbar-brand" href="">
+            <img
+              src="/images/ar.png"
+              height={50}
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
+          <div ><a style={{fontSize:"25px"}}>POSTERMAGIC</a><br></br>
+            <a style={{fontSize:"15px",alignItems:"center"}} >AUGMENTED REALITY</a></div>
+            
           {/* Toggle button */}
           <button
             className="navbar-toggler"
@@ -102,7 +94,12 @@ const showLogout = () => {
                   About
                 </NavLink>
               </li>
+
             </ul>
+
+
+
+
             {/* Left links */}
             <div className="d-flex align-items-center">
               {/* <NavLink
@@ -119,11 +116,13 @@ const showLogout = () => {
               {showLogout()}
             </div>
           </div>
+
           {/* Collapsible wrapper */}
         </div>
         {/* Container wrapper */}
       </nav>
       {/* Navbar */}
+
     </>
   );
 };
