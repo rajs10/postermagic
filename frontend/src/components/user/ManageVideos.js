@@ -73,6 +73,21 @@ const ManageVideos = () => {
     });
   };
 
+  const deleteVideo = async (id) => {
+    const res = await fetch(url+'/video/delete/'+id, {
+      method: 'DELETE'
+    });
+
+    if(res.status === 200){
+      fetchVideo();
+      Swal.fire({
+        icon : 'success',
+        title : 'Success',
+        text : 'Deleted Successfully!'
+      })
+    }
+  }
+
   const fetchVideo = async () => {
     setLoading(true);
     const res = await fetch(url + "/video/getall")

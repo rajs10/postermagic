@@ -12,28 +12,11 @@ function OpenCamera() {
               <img
                 className="img-fluid rounded shadow"
                 src="https://images.unsplash.com/photo-1621947081720-86970823b77a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3840&q=80"
-                srcSet="https://images.unsplash.com/photo-1621947081720-86970823b77a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3840&q=80 3840w, https://images.unsplash.com/photo-1621947081720-86970823b77a??ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&q=80 150w, https://images.unsplash.com/photo-1621947081720-86970823b77a??ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80 300w, https://images.unsplash.com/photo-1621947081720-86970823b77a??ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&q=80 768w, https://images.unsplash.com/photo-1621947081720-86970823b77a??ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80 1024w"
-                sizes="(max-width: 3840px) 100vw, 3840px"
+                srcSet="https://s3.amazonaws.com/vice_asset_uploader/files/1412893010tumblr_n579oufFU81sqatlgo1_1280.gif"
                 width={3840}
                 height=""
-                alt="Richard Horvath"
+                alt="AR Poster"
               />
-              <a
-                className="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center"
-                href="https://www.youtube.com/watch?v=BKgpLOUYZJ4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="5em"
-                  height="5em"
-                  fill="currentColor"
-                  className="text-white"
-                  viewBox="0 0 16 16"
-                  lc-helper="svg-icon"
-                >
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                </svg>
-              </a>
             </div>
           </div>
           {/* /col */}
@@ -53,8 +36,9 @@ function OpenCamera() {
               </div>
             </div>
             <div className="lc-block">
-              <a className="btn btn-lg btn-primary" href="/" role="button">
-                Open Camera
+              <a className="btn btn-lg btn-primary" href="ARviewer" role="button">
+              <h1 class="display-4">Open Camera</h1>
+                
               </a>
             </div>
             {/* /lc-block */}

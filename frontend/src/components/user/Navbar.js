@@ -62,7 +62,7 @@ const Navbar = () => {
         {/* Container wrapper */}
         <div className="container">
           {/* Navbar brand */}
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/main/home">
             <img
               src="/images/ar.png"
               height={50}

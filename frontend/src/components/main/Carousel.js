@@ -7,7 +7,7 @@ const Carousel = () => {
         {/* Carousel wrapper */}
         <div
           id="carouselBasicExample"
-          className="carousel slide carousel-fade"
+          className="carousel slide carousel-fade mt-2"
           data-mdb-ride="carousel"
         >
           {/* Indicators */}
@@ -38,7 +38,7 @@ const Carousel = () => {
             {/* Single item */}
             <div className="carousel-item active">
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp"
+                src="https://s3.amazonaws.com/vice_asset_uploader/files/1412893640HowTo_1000.gif?crop=0.864xw:1xh;center,center&resize=500:*"
                 className="d-block w-100"
                 alt="Sunset Over the City"
               />
@@ -52,7 +52,7 @@ const Carousel = () => {
             {/* Single item */}
             <div className="carousel-item">
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
+                src="https://media.giphy.com/media/cdyq28dtH4t3pvPftb/giphy.gif"
                 className="d-block w-100"
                 alt="Canyon at Nigh"
               />
@@ -64,7 +64,7 @@ const Carousel = () => {
             {/* Single item */}
             <div className="carousel-item">
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+                src="https://media.giphy.com/media/kBrhoxhovfucVXoHlR/giphy.gif"
                 className="d-block w-100"
                 alt="Cliff Above a Stormy Sea"
               />
