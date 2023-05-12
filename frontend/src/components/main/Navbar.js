@@ -53,21 +53,18 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-lightb gradient-custom ">
         {/* Container wrapper */}
         <div className="container">
           {/* Navbar brand */}
-          <a className="navbar-brand" href="">
-            <img
-              src="/images/ar.png"
-              height={50}
-              alt="MDB Logo"
-              loading="lazy"
-            />
-          </a>
-          <div ><a style={{fontSize:"25px"}}>POSTERMAGIC</a><br></br>
-            <a style={{fontSize:"15px",alignItems:"center"}} >AUGMENTED REALITY</a></div>
-            
+          <a className="navbar-brand" href="#">
+        <img
+          src="/images/ar.png"
+          height={50}
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
           {/* Toggle button */}
           <button
             className="navbar-toggler"
@@ -84,12 +81,22 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarButtonsExample">
             {/* Left links */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item"style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/main/home">
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" style={{fontWeight:"bold"}}>
+                <NavLink className="nav-link" to="/user/managevideos">
+                  ManageVideo
+                </NavLink >
+              </li>
+              <li className="nav-item"style={{fontWeight:"bold"}}>
+                <NavLink className="nav-link" to="/user/managemarkers">
+                  ManageMarker
+                </NavLink>
+              </li>
+              <li className="nav-item"style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/main/about">
                   About
                 </NavLink>

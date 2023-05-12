@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const Model = require('../Models/imageModel');
+const Model = require('../models/userModels');
 
 router.post('/add', (req, res) => {
     //get data from client
@@ -13,7 +13,7 @@ router.post('/add', (req, res) => {
         })
         .catch((err) => {
             console.error(err);
-            res.status(500).json(err);
+            res.status(500).json(result);
 
 
         });
@@ -37,30 +37,6 @@ router.post('/authenticate', (req, res) => {
 
 router.get('/getall', (req, res) => {
     Model.find({})
-        .then((result) => {
-            res.json(result);
-
-        }).catch((err) => {
-            console.error(err);
-            res.status(500).json(err);
-
-        });
-});
-
-router.get('/getbyid/:id', (req, res) => {
-    Model.findById(req.params.id)
-        .then((result) => {
-            res.json(result);
-
-        }).catch((err) => {
-            console.error(err);
-            res.status(500).json(err);
-
-        });
-});
-
-router.delete('/delete/:id', (req, res) => {
-    Model.findByIdAndDelete(req.params.id)
         .then((result) => {
             res.json(result);
 

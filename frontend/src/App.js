@@ -14,6 +14,7 @@ import User from './components/user';
 import UserAuth from './auth/UserAuth';
 import UserProvider from './context/UserProvider';
 import { useState } from 'react';
+import GenerateMarker from './components/user/GenerateMarker';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             {/* <Route path='user' element={ <User /> }> */}
               <Route path='managemarkers' element={<ManageMarkers />} />
               <Route path='managevideos' element={<ManageVideos />} />
+              <Route path='generatemarker' element={<GenerateMarker/>}/>
             </Route>
 
           </Routes>

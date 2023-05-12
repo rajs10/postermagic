@@ -5,7 +5,7 @@ const ManageMarkers = () => {
 
   // const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
   const [loading, setLoading] = useState(true);
-  const [img, setImg] = useState([])
+  const [markerList, setMarkerList] = useState([]);
 
   const url = 'http://localhost:5000'
 
@@ -72,6 +72,21 @@ const ManageMarkers = () => {
     });
   };
 
+  const deleteMarker = async (id) => {
+    const res = await fetch(url+'/image/delete/'+id, {
+      method: 'DELETE'
+    });
+
+    if(res.status === 200){
+      fetchImage();
+      Swal.fire({
+        icon : 'success',
+        title : 'Success',
+        text : 'Deleted Successfully!'
+      })
+    }
+  }
+
 
   const fetchImage = async () => {
     setLoading(true);
@@ -80,7 +95,7 @@ const ManageMarkers = () => {
     if (res.status === 200) {
       const data = await res.json();
       console.log(data);
-      setImg(data)
+      setMarkerList(data)
       setLoading(false);
     }
   }
@@ -92,50 +107,66 @@ const ManageMarkers = () => {
   const displayImage = () => {
     return (
       <div className='container'>
+        <div className="card mb-3">
+          <div className="card-body">
+            <label className="form-label upload-label" htmlFor="image">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Marker Image
+            </label>
+            <input hidden type="file" id="image" onChange={uploadFile} />
 
-        <div className="">
-          <label className="form-label" htmlFor="form12">
-            Example label
-          </label>
-          {/* <input type="file" id="image" className="form-control" onChange={uploadFile} /> */}
-          <input type="file" id="image" onChange={uploadFile} />
+          </div>
         </div>
+        <div className="">
+        </div>
+        <section>
+          <div className="container py-5">
+            <div className='row'>
+              {
+                markerList.map(marker => (
 
-        <div>
-          <div className="row">
-            {img.map((image) => (
-              <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                <div className="card shadow-0 border rounded-3">
-                  <div className="card-body">
-                    <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                      <img
-                        // src={pack.image ? pack.image : "/images/space-placeholder.jpg"}
-                        src={'http://localhost:5000/' + image.image}
-                        className="w-100"
-                        alt=""
-                      />
+                  <div className='col-md-4'>
+                    <div className="mb-4">
+                        <button className='btn btn-danger' onClick={e => deleteMarker(marker._id)}>Delete</button>
+                      <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
+                        <img
+                          src={url+"/"+marker.image}
+                          className="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            className="mask"
+                            style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+                          >
+                            <div className="d-flex justify-content-start align-items-start h-100">
+                              <h5>
+                                <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
+                                  {marker.image}
+                                </span>
+                              </h5>
+                            </div>
+                          </div>
+                          <div className="hover-overlay">
+                            <div
+                              className="mask"
+                              style={{ backgroundColor: "rgba(253, 253, 253, 0.15)" }}
+                            />
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                ))
+              }
+            </div>
           </div>
+        </section>
 
 
-
-        </div>
       </div>
     )
   }
-
-
-
-
-
-
-
   return (
-    <div>
+    <div style={{backgroundImage: "url('https://academiccollegeprojects.com/wp-content/uploads/2015/07/Augmeneted-Reality-Projects-for-Engineering-students-support-panel.jpg')"}}>
       {displayImage()}
     </div>
   )

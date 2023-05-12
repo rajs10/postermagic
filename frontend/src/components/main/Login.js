@@ -53,8 +53,8 @@ const Login = () => {
   return (
     <>
       <section className="login-bg"
-        style={{ backgroundImage: "url('/images/0F.png')" }}>
-        <div className="container py-5 h-100">
+        >
+        <div className="container py-5 h-100 gradient-custom1 ">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
               <div
