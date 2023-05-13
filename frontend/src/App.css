@@ -43,13 +43,3 @@
   background: linear-gradient(to right, rgba(4, 53, 22, 0.5), rgba(254,249,215,0.5))
 }
 
-.gradient-custom1 {
-  /* fallback for old browsers */
-  background: #d299c2;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(210,153,194,0.5), rgba(209, 185, 26, 0.5));
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(190, 118, 23, 0.5), rgba(185, 167, 47, 0.5))
-}
