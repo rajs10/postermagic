@@ -15,6 +15,7 @@ import UserAuth from './auth/UserAuth';
 import UserProvider from './context/UserProvider';
 import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
+import PlayAR from './components/user/PlayAR';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
               <Route path='managemarkers' element={<ManageMarkers />} />
               <Route path='managevideos' element={<ManageVideos />} />
               <Route path='generatemarker' element={<GenerateMarker/>}/>
+              <Route path='arplayer' element={<PlayAR/>}/>
             </Route>
 
           </Routes>
