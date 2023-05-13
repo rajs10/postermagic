@@ -15,6 +15,7 @@ const PlayAR = () => {
         <Text value="Hello world, react-aframe-ar!" align="center" position="0 2.3 -1.5" color="#7BC8A4" />
         <Camera preset="hiro" />
         <Video src="/globe-12487.mp4" />
+        
       </Scene>
     </div>
   );
