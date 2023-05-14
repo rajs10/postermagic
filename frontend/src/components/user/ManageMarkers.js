@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
 
-const ManageMarkers = () => {
+const ManageImage = () => {
 
   // const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
   const [loading, setLoading] = useState(true);
@@ -172,4 +172,4 @@ const ManageMarkers = () => {
   )
 }
 
-export default ManageMarkers
+export default ManageImage;
