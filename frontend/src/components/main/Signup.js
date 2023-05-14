@@ -63,7 +63,7 @@ return (
     style={{
       minHeight: '100vh',
       backgroundImage:
-        'url("https://sinhala.vyapara.lk/wp-content/uploads/2021/12/istockphoto-1150039017-170667a.jpg")',
+        'url("https://img.freepik.com/free-vector/augmented-reality-background-isometric-style_23-2147800653.jpg?w=360&t=st=1684044203~exp=1684044803~hmac=dd9a6b7c7b75ba002a406f17e7359bff52843252843f758506280f83157c73ef")',
     }}
   >
 <section className="h-100 ">
