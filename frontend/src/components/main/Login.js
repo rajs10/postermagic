@@ -52,7 +52,7 @@ const Login = () => {
   });
   return (
     <>
-      <section className="login-bg"
+      <section className="login-bg mt-2"
         >
         <div className="container py-5 h-100 gradient-custom1 ">
           <div className="row d-flex justify-content-center align-items-center h-100">
