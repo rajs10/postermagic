@@ -1,9 +1,8 @@
 import React from "react";
 
 const About = () => {
-  return <div className="container">
-
-    <div className="row ">
+  return <div className="container">   
+    <div className="row " >
       <div className="row">
         <div className="col-md-4 fw-bold">Authentication System </div>
         <div className="col-md-8">
@@ -19,6 +18,7 @@ const About = () => {
         <div className="col-md-8">
           The AR setup in the Poster Magic project involves using a mobile
           device with an AR-enabled app to scan a physical poster and
+  \
           overlay virtual content to the Poster Magic app.on it. The setup
           requires a stable internet connection and access .
         </div>
