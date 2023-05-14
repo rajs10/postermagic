@@ -15,7 +15,7 @@ import UserProvider from './context/UserProvider';
 import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
 import PlayAR from './components/user/PlayAR';
-import ManageImage from './components/user/ManageMarkers';
+import ManageImage from './components/user/ManageMarker';
 
 
 function App() {

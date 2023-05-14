@@ -107,7 +107,7 @@ const ManageImage = () => {
   const displayImage = () => {
     return (
       <div className='container'>
-        <div className="card mb-10">
+        <div className="card mb-5">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
               <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Marker Image
