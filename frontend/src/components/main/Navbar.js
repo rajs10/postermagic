@@ -97,6 +97,11 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item"style={{fontWeight:"bold"}}>
+                <NavLink className="nav-link" to="/user/generatemarker">
+                 GenerateMarker
+                </NavLink>
+              </li>
+              <li className="nav-item"style={{fontWeight:"bold"}}>
                 <NavLink className="nav-link" to="/main/about">
                   About
                 </NavLink>
