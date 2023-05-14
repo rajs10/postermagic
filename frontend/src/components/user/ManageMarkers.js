@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
 
-const ManageMarkers = () => {
+const ManageImage = () => {
 
   // const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
   const [loading, setLoading] = useState(true);
@@ -107,7 +107,7 @@ const ManageMarkers = () => {
   const displayImage = () => {
     return (
       <div className='container'>
-        <div className="card mb-3">
+        <div className="card mb-10">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
               <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Marker Image
@@ -166,10 +166,10 @@ const ManageMarkers = () => {
     )
   }
   return (
-    <div style={{backgroundImage: "url('https://academiccollegeprojects.com/wp-content/uploads/2015/07/Augmeneted-Reality-Projects-for-Engineering-students-support-panel.jpg')"}}>
+    <div style={{backgroundImage: "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')" , backgroundSize:'cover'}}>
       {displayImage()}
     </div>
   )
 }
 
-export default ManageMarkers
+export default ManageImage;
