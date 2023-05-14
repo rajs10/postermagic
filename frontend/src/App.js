@@ -8,7 +8,6 @@ import Signup from "./components/main/Signup";
 import Navbar from "./components/main/Navbar";
 import Login from "./components/main/Login";
 import ARViewer from './components/main/ARViewer';
-import ManageMarkers from './components/user/ManageMarkers';
 import ManageVideos from './components/user/ManageVideos';
 import User from './components/user';
 import UserAuth from './auth/UserAuth';
@@ -16,6 +15,7 @@ import UserProvider from './context/UserProvider';
 import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
 import PlayAR from './components/user/PlayAR';
+import ManageImage from './components/user/ManageMarkers';
 
 
 function App() {
@@ -37,7 +37,8 @@ function App() {
             </Route>
             <Route path='user' element={<UserAuth> <User /> </UserAuth>}>
             {/* <Route path='user' element={ <User /> }> */}
-              <Route path='managemarkers' element={<ManageMarkers />} />
+              <Route path='manageimages' element={<ManageImage />} />
+              <Route path='managemarkers' element={<GenerateMarker />} />
               <Route path='managevideos' element={<ManageVideos />} />
               <Route path='generatemarker' element={<GenerateMarker/>}/>
               <Route path='arplayer' element={<PlayAR/>}/>

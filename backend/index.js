@@ -2,6 +2,7 @@ const express = require('express');
 const userRouter = require('./routers/userRouters');
 const imageRouter = require('./routers/imageRouter');
 const videoRouter = require('./routers/videoRouter');
+const markerRouter = require('./routers/markerRouter');
 const utilRouter=require('./routers/util')
 const cors = require('cors');
 
@@ -18,7 +19,11 @@ app.use('/user',userRouter);
 app.use('/image',imageRouter);
 app.use('/video',videoRouter);
 app.use('/util',utilRouter);
+app.use('/marker',markerRouter);
+
+
 app.use(express.static('./static/uploads'))
+
 app.get('/', (req, res) => {
   res.send('Working fine');
 
