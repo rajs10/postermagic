@@ -107,7 +107,7 @@ const ManageMarkers = () => {
   const displayImage = () => {
     return (
       <div className='container'>
-        <div className="card mb-3">
+        <div className="card mb-10">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
               <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Marker Image
@@ -166,7 +166,7 @@ const ManageMarkers = () => {
     )
   }
   return (
-    <div style={{backgroundImage: "url('https://academiccollegeprojects.com/wp-content/uploads/2015/07/Augmeneted-Reality-Projects-for-Engineering-students-support-panel.jpg')"}}>
+    <div style={{backgroundImage: "url('https://gamedevbeginner.com/wp-content/uploads/object-method-background.jpg')"}}>
       {displayImage()}
     </div>
   )
