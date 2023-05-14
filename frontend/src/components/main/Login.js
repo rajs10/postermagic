@@ -52,8 +52,7 @@ const Login = () => {
   });
   return (
     <>
-      <section className="login"
-      style={{backgroundImage:'url("https://img.freepik.com/free-vector/augmented-reality-background-isometric-style_23-2147800653.jpg?w=740&t=st=1683951314~exp=1683951914~hmac=4e525e35da6d76fd928e46de6849dd7a15f13c5c79b8077a8cfd0376d3ca2449")',}}
+      <section className="login-bg"
         >
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
