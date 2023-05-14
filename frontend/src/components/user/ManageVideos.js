@@ -106,7 +106,7 @@ const ManageVideos = () => {
 
   const displayVideo = () => {
     return (
-      <div style={{ backgroundImage: "url(https://academiccollegeprojects.com/wp-content/uploads/2015/07/Augmeneted-Reality-Projects-for-Engineering-students-support-panel.jpg)", backgroundSize:'cover', backgroundRepeat:'no-repeat' }}>
+      <div style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/camera-setting-take-video-blogger-stage-background_10541-1386.jpg?w=740')", backgroundSize:'cover'}}>
 
         <div className='container'>
         <div className="card mb-3">

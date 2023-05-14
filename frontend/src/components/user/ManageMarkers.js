@@ -166,7 +166,7 @@ const ManageMarkers = () => {
     )
   }
   return (
-    <div style={{backgroundImage: "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')"}}>
+    <div style={{backgroundImage: "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')" , backgroundSize:'cover'}}>
       {displayImage()}
     </div>
   )
