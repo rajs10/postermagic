@@ -47,7 +47,7 @@ function Footer() {
                   {/* Content */}
                   <h6 className="text-uppercase fw-bold mb-4">
                     <i className="fas fa-gem me-3 text-secondary" />
-                    Company name
+                    Project Name
                   </h6>
                   <p>
                     Augmented Reality
@@ -57,10 +57,10 @@ function Footer() {
                 {/* Grid column */}
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                  <h6 className="text-uppercase fw-bold mb-4">Tools</h6>
                   <p>
                     <a href="#!" className="text-reset">
-                      Angular
+                      MongoDB
                     </a>
                   </p>
                   <p>
@@ -70,12 +70,12 @@ function Footer() {
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      Vue
+                      Node.js
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      Laravel
+                      Express.js
                     </a>
                   </p>
                 </div>
@@ -86,19 +86,14 @@ function Footer() {
                   <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
                   <p>
                     <a href="#!" className="text-reset">
-                      Pricing
+                      Feedback
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-reset">
-                      Settings
+                      About
                     </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Orders
-                    </a>
-                  </p>
+                  </p>                              
                   <p>
                     <a href="#!" className="text-reset">
                       Help
@@ -111,20 +106,14 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                   <p>
-                    <i className="fas fa-home me-3 text-secondary" /> New York,
-                    NY 10012, US
+                    <i className="fas fa-home me-3 text-secondary" /> BBD University, Lucknow
                   </p>
                   <p>
                     <i className="fas fa-envelope me-3 text-secondary" />
-                    info@example.com
+                    postermagicar@gmail.com
                   </p>
                   <p>
-                    <i className="fas fa-phone me-3 text-secondary" /> + 01 234
-                    567 88
-                  </p>
-                  <p>
-                    <i className="fas fa-print me-3 text-secondary" /> + 01 234
-                    567 89
+                    <i className="fas fa-phone me-3 text-secondary" />8546072604, 7800477099
                   </p>
                 </div>
                 {/* Grid column */}
@@ -138,7 +127,7 @@ function Footer() {
             className="text-center p-4"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.025)" }}
           >
-            © 2021 Copyright:
+            © 2023 Copyright:
             <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
               PosterMagic
             </a>
