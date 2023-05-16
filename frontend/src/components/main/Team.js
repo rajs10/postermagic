@@ -3,7 +3,7 @@ import React from "react";
 function Team() {
   return (
     <>
-      <div className="row row-cols-1 row-cols-md-4 g-5 p-5 container-fluid">
+      <div className="row row-cols-1 row-cols-md-4 g-5 p-2">
       <div className="col">
         <div className="card h-100 ">
           <img
