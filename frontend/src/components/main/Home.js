@@ -10,11 +10,7 @@ const Home = () => {
       <Carousel />
       
       <OpenCamera />
-      <div className="container">
-        
-        
         <Team />
-      </div>
       <div>
         <Footer />
       </div>
