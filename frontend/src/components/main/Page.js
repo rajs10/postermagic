@@ -3,7 +3,7 @@ import React from 'react'
 const Page = () => {
     return (
         <div className="card text-center">
-            <div className="mt-3 text-info"><h2>
+            <div className="mt-3 text-info "><h2>
                 Our built-in solution<span className="badge badge-primary"></span>
             </h2>
             </div>

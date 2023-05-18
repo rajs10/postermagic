@@ -11,7 +11,7 @@ const ContactUs = () => {
             email: '',
             message: ''
         },
-        onSubmit: async (values, { setSubmitting }) => {
+        onSubmit: async (values, { setSubmitting,resetForm }) => {
             //setSubmitting(true);
             console.log(values);
             const res = await fetch('http://localhost:5000/contact/add', {
@@ -29,6 +29,7 @@ const ContactUs = () => {
                     text: 'Message Sent'
 
                 })
+                resetForm()
             } else {
                 Swal.fire({
                     icon: 'error',
@@ -115,7 +116,6 @@ const ContactUs = () => {
                                             </div>
                                         </p>
                                         {/* </form> */}
-
                                     </form>
                                 </div>
                             </div>

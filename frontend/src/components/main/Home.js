@@ -11,6 +11,7 @@ const Home = () => {
       <Carousel />
       <Page/>
       
+      
       <OpenCamera />
         <Team />
       <div>
