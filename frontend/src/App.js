@@ -16,6 +16,7 @@ import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
 import PlayAR from './components/user/PlayAR';
 import ManageImage from './components/user/ManageMarker';
+import ContactUs from './components/main/ContactUs';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Route path='navbar' element={<Navbar />} />
               <Route path='Login' element={<Login />} />
               <Route path='About' element={<About />} />
+              <Route path='ContactUs' element={<ContactUs />} />
               <Route path='arviewer' element={<ARViewer />} />
               <Route path='index' element={<index />} />
             </Route>

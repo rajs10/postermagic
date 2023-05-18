@@ -12,9 +12,9 @@ function OpenCamera() {
               <img
                 className="img-fluid rounded shadow"
                 src="https://images.unsplash.com/photo-1621947081720-86970823b77a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3840&q=80"
-                srcSet="https://s3.amazonaws.com/vice_asset_uploader/files/1412893010tumblr_n579oufFU81sqatlgo1_1280.gif"
+                srcSet="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/032_Blog_768x440.gif"
                 width={3840}
-                height=""
+                height="100%"
                 alt="AR Poster"
               />
             </div>

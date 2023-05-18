@@ -102,7 +102,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item"style={{fontWeight:"bold"}}>
-                <NavLink className="nav-link" to="/main/about">
+                <NavLink className="nav-link" to="/main/ContactUs">
                   ContactUs
                 </NavLink>
               </li>

@@ -3,82 +3,77 @@ import React from 'react'
 const Page = () => {
     return (
         <div className="card text-center">
-            <div className="mt-3"><h2>
+            <div className="mt-3 text-info"><h2>
                 Our built-in solution<span className="badge badge-primary"></span>
             </h2>
             </div>
 
             <><div className=''>
                 <>
-                    <button
+                    <a href='#Retail'
                         type="button"
                         className="btn btn-outline-secondary btn-rounded m-2"
                         data-mdb-ripple-color="dark"
                     >
                         Retail
-                    </button>
-                    <button
+                    </a>
+                    <a href='#Education'
                         type="button"
                         className="btn btn-outline-secondary btn-rounded m-2"
                         data-mdb-ripple-color="dark"
                     >
                         Education
-                    </button>
-                    <button
+                    </a>
+                    <a href='#Tourism'
                         type="button"
                         className="btn btn-outline-secondary btn-rounded m-2"
                         data-mdb-ripple-color="dark"
                     >
                         Tourism
-                    </button>
+                    </a>
                 </>
             </div>
             </>
 
             <div className="d-flex">
-                <div className="p-2 w-100"><h5 className="card-title">Retail</h5>
+                <div className="p-2 w-100 float-md-left" id='Retail'><h3 className="card-title">Retail</h3>
                     <p className="card-text">
-                        Magic AR can enhance the shopping experience by allowing customers to visualize products in their own space before purchasing, as well as providing personalized recommendations and interactive product information.
+                        Augmented reality can be used in retail to enhance the shopping experience for customers. Some possible applications include virtual try-on for clothing and makeup, product visualization in 3D, and interactive in-store displays that provide additional information and engagement.
 
                     </p>
-                    <button type="button" className="btn btn-primary">
-                        Button
-                    </button></div>
-                <div className="p-2 flex-shrink-1"><img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                </div>
+                <div className="p-2 flex-shrink-1" id='Education'><img
+                    src="https://jingdaily.com/wp-content/uploads/2018/04/4718000514da94aa0992.gif"
                     className="w-100 shadow-1-strong rounded mb-4"
                     alt="Boat on Calm Water"
                 />
                 </div>
             </div>
             <div className="d-flex">
-            <div className="p-2 flex-shrink-1"><img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                <div className="p-2 flex-shrink-1" i><img
+                    src="https://diui35v2plbz7.cloudfront.net/blogs/20191124221446.gif"
                     className="w-100 shadow-1-strong rounded mb-4"
                     alt="Boat on Calm Water"
                 />
                 </div>
-                <div className="p-2 w-100"><h5 className="card-title">Retail</h5>
+                <div className="p-2 w-100"><h3 className="card-title">Education</h3>
                     <p className="card-text">
-                        Magic AR can enhance the shopping experience by allowing customers to visualize products in their own space before purchasing, as well as providing personalized recommendations and interactive product information.
+                        Augmented reality in education can help make learning more interactive and engaging. It can be used to provide visual and interactive demonstrations, simulations, and educational games. AR can also help students explore complex concepts, such as anatomy or astronomy, in a more immersive and memorable way.
 
                     </p>
-                    <button type="button" className="btn btn-primary">
-                        Button
-                    </button></div>
-                
+                </div>
+
             </div>
             <div className="d-flex">
-                <div className="p-2 w-100"><h5 className="card-title">Retail</h5>
+                <div className="p-2 w-100" id='Tourism'><h3 className="card-title">Tourism</h3>
                     <p className="card-text">
-                        Magic AR can enhance the shopping experience by allowing customers to visualize products in their own space before purchasing, as well as providing personalized recommendations and interactive product information.
+                    Augmented reality can enhance the tourism experience by providing virtual guides, 3D maps, and historical reconstructions. AR can also help visitors navigate unfamiliar environments, learn about landmarks and attractions, and immerse themselves in local culture. AR can transform tourism by making it more informative, entertaining, and interactive for travelers.
+
 
                     </p>
-                    <button type="button" className="btn btn-primary">
-                        Button
-                    </button></div>
+                </div>
                 <div className="p-2 flex-shrink-1"><img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    src="https://i.gifer.com/D6bd.gif"
                     className="w-100 shadow-1-strong rounded mb-4"
                     alt="Boat on Calm Water"
                 />
