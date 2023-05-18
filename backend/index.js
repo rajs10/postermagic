@@ -3,6 +3,7 @@ const userRouter = require('./routers/userRouters');
 const imageRouter = require('./routers/imageRouter');
 const videoRouter = require('./routers/videoRouter');
 const markerRouter = require('./routers/markerRouter');
+const contactRouter = require('./routers/contactRouter')
 const utilRouter=require('./routers/util')
 const cors = require('cors');
 
@@ -20,6 +21,7 @@ app.use('/image',imageRouter);
 app.use('/video',videoRouter);
 app.use('/util',utilRouter);
 app.use('/marker',markerRouter);
+app.use('/contact',contactRouter);
 
 
 app.use(express.static('./static/uploads'))

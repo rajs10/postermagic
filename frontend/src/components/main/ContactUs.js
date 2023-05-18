@@ -14,7 +14,7 @@ const ContactUs = () => {
         onSubmit: async (values, { setSubmitting }) => {
             //setSubmitting(true);
             console.log(values);
-            const res = await fetch('http://localhost:5000/user/add', {
+            const res = await fetch('http://localhost:5000/contact/add', {
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: {
@@ -53,13 +53,13 @@ const ContactUs = () => {
                                         <h2 className="w3-text-light-grey text-center">ContactUs</h2>
                                         <hr></hr>
                                         <p>Let's get in touch. Send me a message:</p>
-                                        <form>
+                                        {/* <form> */}
                                             <div className="form-dark mb-4">
                                                 <label className="form-label text-white" htmlFor="typeNameX">
                                                     Name
                                                 </label>
                                                 <input
-                                                    type="name"
+                                                    type="text"
                                                     id="name"
                                                     value={ContactUsForm.values.name}
                                                     onChange={ContactUsForm.handleChange}
@@ -83,7 +83,7 @@ const ContactUs = () => {
                                                     Message
                                                 </label>
                                                 <input
-                                                    type="message"
+                                                    type="text"
                                                     id="message"
                                                     value={ContactUsForm.values.message}
                                                     onChange={ContactUsForm.handleChange}
@@ -115,6 +115,7 @@ const ContactUs = () => {
                                                 </div>
                                             </p>
                                         </form>
+
                                     </form>
                                 </div>
                             </div>
