@@ -16,19 +16,10 @@ function Footer() {
             {/* Right */}
             <div>
               <a href="" className="me-4 link-secondary">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a href="" className="me-4 link-secondary">
-                <i className="fab fa-twitter" />
-              </a>
-              <a href="" className="me-4 link-secondary">
                 <i className="fab fa-google" />
               </a>
               <a href="" className="me-4 link-secondary">
                 <i className="fab fa-instagram" />
-              </a>
-              <a href="" className="me-4 link-secondary">
-                <i className="fab fa-linkedin" />
               </a>
               <a href="" className="me-4 link-secondary">
                 <i className="fab fa-github" />
@@ -50,7 +41,7 @@ function Footer() {
                     Project Name
                   </h6>
                   <p>
-                    Augmented Reality
+                    PosterMagicAR
                   </p>
                 </div>
                 {/* Grid column */}
@@ -85,7 +76,7 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Company</h6>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="/main/feedback" className="text-reset">
                       Feedback
                     </a>
                   </p>
@@ -94,11 +85,6 @@ function Footer() {
                       About
                     </a>
                   </p>                              
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Help
-                    </a>
-                  </p>
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
