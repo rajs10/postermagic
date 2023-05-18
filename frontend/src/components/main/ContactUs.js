@@ -44,11 +44,11 @@ const ContactUs = () => {
             <div className='row d-flex justify-content-center align-items-center h-100'>
                 <div className="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div className='card text-light'
-                        style={{ backgroundColor: "blue" }}>
+                        style={{ backgroundImage:'url("https://img.freepik.com/free-photo/3d-render-concept-phone-receiver-3d-art-design-illustration_460848-9667.jpg?w=740&t=st=1684430612~exp=1684431212~hmac=092c7302635f346e527eee5aad7122bf0bbb80393479d46faceb535989cc164e")',backgroundColor: "olive" }}>
                         <>
                             {/* Contact Section */}
                             <div className="w3-padding-64 w3-content w3-text-grey" id="contact">
-                                <div className="card-body p-5 text-white login" style={{ border: "2px solid black" }}>
+                                <div className="card-body p-5 text-white,login" style={{ border: "2px solid black" }}>
 
                                     <form onSubmit={ContactUsForm.handleSubmit}>
                                         <h2 className="w3-text-light-grey text-center">ContactUs</h2>
