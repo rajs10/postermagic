@@ -54,69 +54,69 @@ const ContactUs = () => {
                                         <hr></hr>
                                         <p>Let's get in touch. Send me a message:</p>
                                         {/* <form> */}
-                                            <div className="form-dark mb-4">
-                                                <label className="form-label text-white" htmlFor="typeNameX">
-                                                    Name
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    id="name"
-                                                    value={ContactUsForm.values.name}
-                                                    onChange={ContactUsForm.handleChange}
-                                                    className="form-control form-control-lg"
-                                                />
-                                            </div>
-                                            <div className="form-label mb-4">
-                                                <label className="form-label text-white" htmlFor="typeEmailX">
-                                                    Email
-                                                </label>
-                                                <input
-                                                    type="email"
-                                                    id="email"
-                                                    value={ContactUsForm.values.email}
-                                                    onChange={ContactUsForm.handleChange}
-                                                    className="form-control form-control-lg"
-                                                />
-                                            </div>
-                                            <div className="form-dark mb-4">
-                                                <label className="form-label text-white" htmlFor="typeMessageX">
-                                                    Message
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    id="message"
-                                                    value={ContactUsForm.values.message}
-                                                    onChange={ContactUsForm.handleChange}
-                                                    className="form-control form-control-lg"
-                                                />
-                                            </div>
-                                            <button
+                                        <div className="form-dark mb-4">
+                                            <label className="form-label text-white" htmlFor="typeNameX">
+                                                Name
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                value={ContactUsForm.values.name}
+                                                onChange={ContactUsForm.handleChange}
+                                                className="form-control form-control-lg"
+                                            />
+                                        </div>
+                                        <div className="form-label mb-4">
+                                            <label className="form-label text-white" htmlFor="typeEmailX">
+                                                Email
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                value={ContactUsForm.values.email}
+                                                onChange={ContactUsForm.handleChange}
+                                                className="form-control form-control-lg"
+                                            />
+                                        </div>
+                                        <div className="form-dark mb-4">
+                                            <label className="form-label text-white" htmlFor="typeMessageX">
+                                                Message
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="message"
+                                                value={ContactUsForm.values.message}
+                                                onChange={ContactUsForm.handleChange}
+                                                className="form-control form-control-lg"
+                                            />
+                                        </div>
+                                        <button
 
-                                                type="submit">
-                                                <i className="fa fa-paper-plane" /> Send Message
-                                            </button>
-                                            <p>
-                                                <hr></hr>
-                                                <div className="w3-section">
-                                                    <p>
-                                                        <i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
-                                                        BBD University, Lucknow
-                                                    </p>
-                                                    <p>
-                                                        <i className="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
-                                                        Phone: 8546072604, 7800477099
-                                                    </p>
-                                                    <p>
-                                                        <i className="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
-                                                            {" "}
-                                                        </i>{" "}
-                                                        Email: postermagicar@mail.com
-                                                    </p>
-                                                </div>
-                                            </p>
-                                        </form>
+                                            type="submit">
+                                            <i className="fa fa-paper-plane" /> Send Message
+                                        </button>
+                                        <p>
+                                            <hr></hr>
+                                            <div className="w3-section">
+                                                <p>
+                                                    <i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
+                                                    BBD University, Lucknow
+                                                </p>
+                                                <p>
+                                                    <i className="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
+                                                    Phone: 8546072604, 7800477099
+                                                </p>
+                                                <p>
+                                                    <i className="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                                                        {" "}
+                                                    </i>{" "}
+                                                    Email: postermagicar@mail.com
+                                                </p>
+                                            </div>
+                                        </p>
+                                        {/* </form> */}
 
-                                    {/* </form> */}
+                                    </form>
                                 </div>
                             </div>
 
