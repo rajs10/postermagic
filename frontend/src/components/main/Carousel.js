@@ -64,7 +64,7 @@ const Carousel = () => {
             {/* Single item */}
             <div className="carousel-item">
               <img
-                src="https://media.giphy.com/media/kBrhoxhovfucVXoHlR/giphy.gif"
+                src="https://media.giphy.com/media/cdyq28dtH4t3pvPftb/giphy.gif"
                 className="d-block w-100"
                 alt="Cliff Above a Stormy Sea"
               />
