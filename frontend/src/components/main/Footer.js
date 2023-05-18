@@ -76,7 +76,7 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Company</h6>
                   <p>
-                    <a href="/main/feedback" className="text-reset">
+                    <a href="/main/Feedback" className="text-reset">
                       Feedback
                     </a>
                   </p>

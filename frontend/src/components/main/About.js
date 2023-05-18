@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => {
-  return <div className="container">   
+  return <div className="container mt-4">   
     <div className="row " >
       <div className="row">
         <div className="col-md-4 fw-bold">Authentication System </div>
@@ -14,7 +14,7 @@ const About = () => {
 
       </div>
       <div className="row mt-3">
-        <div className="col-md-4 fw-bold ">Agumented Reality</div>
+        <div className="col-md-4 fw-bold ">AR setup</div>
         <div className="col-md-8">
           The AR setup in the Poster Magic project involves using a mobile
           device with an AR-enabled app to scan a physical poster and
