@@ -83,14 +83,14 @@ function Footer() {
                 {/* Grid column */}
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+                  <h6 className="text-uppercase fw-bold mb-4">Company</h6>
                   <p>
                     <a href="#!" className="text-reset">
                       Feedback
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="/main/About" className="text-reset">
                       About
                     </a>
                   </p>                              

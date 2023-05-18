@@ -60,7 +60,6 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         {/* Container wrapper */}
-        <div className="container">
           {/* Navbar brand */}
           <a className="navbar-brand" href="/main/home">
             <img
@@ -129,7 +128,6 @@ const Navbar = () => {
             </div>
           </div>
           {/* Collapsible wrapper */}
-        </div>
         {/* Container wrapper */}
       </nav>
       {/* Navbar */}
