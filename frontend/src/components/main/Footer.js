@@ -50,22 +50,22 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Tools</h6>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="https://www.mongodb.com/" className="text-reset">
                       MongoDB
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="https://react.dev/" className="text-reset">
                       React
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="https://nodejs.org/en" className="text-reset">
                       Node.js
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="https://expressjs.com/" className="text-reset">
                       Express.js
                     </a>
                   </p>
