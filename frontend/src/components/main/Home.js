@@ -9,11 +9,9 @@ const Home = () => {
   return (
     <>
       <Carousel />
-      <Page/>
-      
-      
       <OpenCamera />
-        <Team />
+      <Page />
+      <Team />
       <div>
         <Footer />
       </div>

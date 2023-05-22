@@ -1,4 +1,5 @@
 import React from 'react'
+import { useFormik } from "formik";
 import './Feedback.css'
 import Swal from "sweetalert2";
 
@@ -10,7 +11,8 @@ const Feedback = () => {
             Good: '',
             Medicore: '',
             Bad: '',
-            Verybad: ''
+            Verybad: '',
+            Yourfeedback:''
 
         },
 
@@ -44,7 +46,6 @@ const Feedback = () => {
         },
     });
 
-    const Feedback = () => {
         return (
             <div className='card'>
                 <div className="mx-0 mx-sm-auto mt-2 mb-3">
@@ -66,8 +67,8 @@ const Feedback = () => {
                                 </p>
                             </div>
                             <hr />
-                            <form onSubmit={FeedbackForm.handleSubmit}
-                                className="px-4" action="">
+                            <form onSubmit={FeedbackForm.handleSubmit}>
+                               <div className="px-4" action="">
                                 <p className="text-center">
                                     <strong>Your rating:</strong>
                                 </p>
@@ -150,8 +151,9 @@ const Feedback = () => {
                                         onChange={FeedbackForm.handleChange}
                                     />
                                     <label className="form-label" htmlFor="form4Example3">
-                                        Your feedback
+                                        Yourfeedback
                                     </label>
+                                </div>
                                 </div>
                             </form>
                         </div>
@@ -164,10 +166,7 @@ const Feedback = () => {
                 </div>
             </div>
 
-
-
-
         )
     }
 
-    export default Feedback;
+    export default Feedback
