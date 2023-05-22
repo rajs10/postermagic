@@ -1,7 +1,6 @@
 import { useFormik } from "formik";
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import * as Yup from 'yup';
+
 import Swal from "sweetalert2";
 
 const ContactUs = () => {

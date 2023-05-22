@@ -13,10 +13,8 @@ const Feedback = () => {
             Bad: '',
             Verybad: '',
             Yourfeedback:''
-
         },
-
-        onSubmit: async (values, { setSubmitting, resetForm }) => {
+        onSubmit: async (values, { setSubmitting, resetForm}) => {
             //setSubmitting(true);
             console.log(values);
             const res = await fetch('http://localhost:5000/contact/add', {
@@ -145,8 +143,8 @@ const Feedback = () => {
                                     <textarea
                                         className="form-control"
                                         id="Yourfeedback"
-                                        rows={4}
-                                        defaultValue={""}
+                                        
+                                        
                                         value={FeedbackForm.values.Yourfeedback}
                                         onChange={FeedbackForm.handleChange}
                                     />
