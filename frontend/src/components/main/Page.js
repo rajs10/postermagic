@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div className='container mt-3'>
+        <div className=' mt-3'>
             <div className="card">
                 <div className="mt-3 text-info text-center"><h2>
                     Our built-in solution<span className="badge badge-primary"></span>
