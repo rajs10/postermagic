@@ -48,68 +48,70 @@ const Login = () => {
   });
   return (
     <>
-      <div className="LoginForm">
-        <div className="container pt-5 mb-0">
+      <div className="LoginForm mt-3">
+        <div className="container pt-2 mb-0">
           <div className="row d-flex justify-content-center align-items-center">
             <div
-              className="card col-md-4 col-sm-3 col-xl-4 p-3 SignupCard"
-              style={{ marginLeft: "auto" }}
+              className="card col-md-4 col-sm-3 col-xl-4 p-2 SignupCard"
+              style={{ marginLeft: "auto", backgroundColor: "#F3D6DC" }}
             >
-              <form onSubmit={loginForm.handleSubmit}>
-                <div className="mb-md-5 mt-md-4 pb-1">
-                  <h2 className="fw-bold mb-1 text-uppercase">Login</h2>
-                  <p className="mb-3">Please enter your Email and password!</p>
-                  <div className="form-dark mb-2">
-                    <label className="form-label " htmlFor="typeEmailX">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={loginForm.values.email}
-                      onChange={loginForm.handleChange}
-                      className="form-control form-control-lg"
-                    />
+              <div className="card-body p-2" style={{ border: "2px solid black" }}>
+                <form onSubmit={loginForm.handleSubmit}>
+                  <div className="mb-md-5 mt-md-4 pb-1">
+                    <h2 className="fw-bold mb-1 text-uppercase">Login</h2>
+                    <p className="mb-3">Please enter your Email and password!</p>
+                    <div className="form-dark mb-2">
+                      <label className="form-label " htmlFor="typeEmailX">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        value={loginForm.values.email}
+                        onChange={loginForm.handleChange}
+                        className="form-control form-control-lg"
+                      />
+                    </div>
+                    <div className="form-label mb-4">
+                      <label className="form-label " htmlFor="typePasswordX">
+                        Password
+                      </label>
+                      <input
+                        type="password"
+                        id="password"
+                        value={loginForm.values.password}
+                        onChange={loginForm.handleChange}
+                        className="form-control form-control-lg"
+                      />
+                    </div>
+                    <p className="small mb-2 pb-lg-2">
+                      <a className="text-dark-50" href="#!">
+                        Forgot password?
+                      </a>
+                    </p>
+                    <button type="submit" className="btn btn-danger btn-md btn-block">
+                      Login
+                    </button>
+                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
+                      <a href="#!" className="">
+                        <i className="fab fa-facebook-f fa-lg" />
+                      </a>
+                      <a href="#!" className="">
+                        <i className="fab fa-twitter fa-lg mx-4 px-2" />
+                      </a>
+                      <a href="#!" className="dark">
+                        <i className="fab fa-google fa-lg" />
+                      </a>
+                    </div>
+                    <p className="mb-0 mt-2">
+                      Don't have an account?{" "}
+                      <a href="Signup" className=" fw-bold">
+                        Sign Up
+                      </a>
+                    </p>
                   </div>
-                  <div className="form-label mb-4">
-                    <label className="form-label " htmlFor="typePasswordX">
-                      Password
-                    </label>
-                    <input
-                      type="password"
-                      id="password"
-                      value={loginForm.values.password}
-                      onChange={loginForm.handleChange}
-                      className="form-control form-control-lg"
-                    />
-                  </div>
-                  <p className="small mb-2 pb-lg-2">
-                    <a className="text-dark-50" href="#!">
-                      Forgot password?
-                    </a>
-                  </p>
-                  <button className="btn btn-danger btn-lg px-5" type="submit">
-                    Login
-                  </button>
-                  <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                    <a href="#!" className="">
-                      <i className="fab fa-facebook-f fa-lg" />
-                    </a>
-                    <a href="#!" className="">
-                      <i className="fab fa-twitter fa-lg mx-4 px-2" />
-                    </a>
-                    <a href="#!" className="dark">
-                      <i className="fab fa-google fa-lg" />
-                    </a>
-                  </div>
-                  <p className="mb-0 mt-4">
-                    Don't have an account?{" "}
-                    <a href="Signup" className=" fw-bold">
-                      Sign Up
-                    </a>
-                  </p>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>

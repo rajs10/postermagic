@@ -103,6 +103,18 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
+          <>
+            {/* Search form */}
+            <div className="md-form mt-0 me-3 mb-1">
+              <input
+                className="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </>
+
 
           {/* Left links */}
           <div className="d-flex align-items-center">

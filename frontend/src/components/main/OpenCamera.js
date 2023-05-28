@@ -36,8 +36,8 @@ function OpenCamera() {
               </div>
             </div>
             <div className="lc-block">
-              <a className="btn btn-lg btn-primary" href="ARviewer" role="button">
-              <h1 class="display-4">Open Camera</h1>
+              <a className="btn btn-danger" href="ARviewer" role="button">
+              Open Camera
                 
               </a>
             </div>

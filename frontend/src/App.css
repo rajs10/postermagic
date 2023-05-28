@@ -49,6 +49,16 @@
   background-repeat: no-repeat;
   margin-left: 10%;
 }
+.LoginForm{
+  background-image: url('./components/main/images/loginp.png');
+  background-repeat: no-repeat;
+}
+.contactbg{
+  background-image: url('./components/main/images/contact.svg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin-left: 5%;
+}
 
 
 .gradient-custom {

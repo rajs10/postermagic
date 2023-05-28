@@ -57,15 +57,16 @@ const Signup = () => {
     <div className="BackgroundImage">
       <div className="row d-flex justify-content-center align-items-center  my-4">
         <div
-          className="card col-md-4 col-sm-3 col-xl-4 p-3 SignupCard"
-          style={{ marginLeft: "40%" }}
+          className="card col-md-4 col-sm-3 col-xl-4 p-2 SignupCard"
+          style={{ marginLeft: "40%", backgroundColor: "#F3D6DC" }}
         >
-          <form onSubmit={signupForm.handleSubmit}>
-            <h3 className="my-3 text-uppercase text-center">
-              Create Your Account
-            </h3>
-            <div className="row">
-              <div className="mb-2">
+          <div className="card-body p-2" style={{ border: "2px solid black" }}>
+            <form onSubmit={signupForm.handleSubmit}>
+              <h3 className="my-3 text-uppercase text-center">
+                Create Your Account
+              </h3>
+              <div className="row">
+
                 <div className="mb-2">
                   <input
                     type="text"
@@ -79,57 +80,58 @@ const Signup = () => {
                   </label>
                 </div>
               </div>
-            </div>
 
-            <div className="mb-2">
-              <input
-                type="email"
-                id="email"
-                value={signupForm.values.email}
-                onChange={signupForm.handleChange}
-                className="form-control form-control-lg"
-              />
-              <label className="form-label" htmlFor="form3Example8">
-                Email
-              </label>
-            </div>
 
-            <div className="mb-2">
-              <input
-                type="password"
-                id="password"
-                value={signupForm.values.password}
-                onChange={signupForm.handleChange}
-                className="form-control form-control-lg"
-              />
-              <label className="form-label" htmlFor="form3Example9">
-                Password
-              </label>
-            </div>
-            <div className="mb-2">
-              <input
-                type="password"
-                id="cPassword"
-                value={signupForm.values.cPassword}
-                onChange={signupForm.handleChange}
-                className="form-control form-control-lg"
-              />
-              <label className="form-label" htmlFor="form3Example9">
-                Confirm Password
-              </label>
-            </div>
-            <div className="d-flex justify-content-end pt-3">
-              <button type="submit" className="btn btn-danger btn-lg ms-2">
+              <div className="mb-2">
+                <input
+                  type="email"
+                  id="email"
+                  value={signupForm.values.email}
+                  onChange={signupForm.handleChange}
+                  className="form-control form-control-lg"
+                />
+                <label className="form-label" htmlFor="form3Example8">
+                  Email
+                </label>
+              </div>
+
+              <div className="mb-2">
+                <input
+                  type="password"
+                  id="password"
+                  value={signupForm.values.password}
+                  onChange={signupForm.handleChange}
+                  className="form-control form-control-lg"
+                />
+                <label className="form-label" htmlFor="form3Example9">
+                  Password
+                </label>
+              </div>
+              <div className="mb-2">
+                <input
+                  type="password"
+                  id="cPassword"
+                  value={signupForm.values.cPassword}
+                  onChange={signupForm.handleChange}
+                  className="form-control form-control-lg"
+                />
+                <label className="form-label" htmlFor="form3Example9">
+                  Confirm Password
+                </label>
+              </div>
+
+              <button type="submit" className="btn btn-danger btn-md btn-block">
                 Submit
               </button>
-            </div>
-            <p className="mt-3">
-              Have an account?{" "}
-              <a href="Login" className="text-dark-50 fw-bold">
-                Login
-              </a>
-            </p>
-          </form>
+
+              <p className="mt-2">
+                Have an account?{" "}
+                <a href="Login" className="text-dark-50 fw-bold">
+                  Login
+                </a>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
