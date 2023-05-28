@@ -15,13 +15,13 @@ function Footer() {
             {/* Left */}
             {/* Right */}
             <div>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-google" />
               </a>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-instagram" />
               </a>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-github" />
               </a>
             </div>
@@ -40,9 +40,7 @@ function Footer() {
                     <i className="fas fa-gem me-3 text-secondary" />
                     Project Name
                   </h6>
-                  <p>
-                    PosterMagicAR
-                  </p>
+                  <p>PosterMagicAR</p>
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
@@ -84,7 +82,7 @@ function Footer() {
                     <a href="/main/About" className="text-reset">
                       About
                     </a>
-                  </p>                              
+                  </p>
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
@@ -92,14 +90,16 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                   <p>
-                    <i className="fas fa-home me-3 text-secondary" /> BBD University, Lucknow
+                    <i className="fas fa-home me-3 text-secondary" /> BBD
+                    University, Lucknow
                   </p>
                   <p>
                     <i className="fas fa-envelope me-3 text-secondary" />
                     postermagicar@gmail.com
                   </p>
                   <p>
-                    <i className="fas fa-phone me-3 text-secondary" />8546072604, 7800477099
+                    <i className="fas fa-phone me-3 text-secondary" />
+                    8546072604, 7800477099
                   </p>
                 </div>
                 {/* Grid column */}

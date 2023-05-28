@@ -61,7 +61,9 @@ const Carousel = () => {
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
                 </div>
               </div>
               {/* Single item */}
