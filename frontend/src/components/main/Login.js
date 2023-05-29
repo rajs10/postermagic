@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useUserContext } from "../../context/UserProvider";
+import Copyrightfooter from "./Copyrightfooter";
 
 const Login = () => {
   const { loggedIn, setLoggedIn } = useUserContext();
@@ -48,18 +49,23 @@ const Login = () => {
   });
   return (
     <>
-      <div className="LoginForm mt-3">
+      <div className="LoginForm mt-5">
         <div className="container pt-2 mb-0">
           <div className="row d-flex justify-content-center align-items-center">
             <div
               className="card col-md-4 col-sm-3 col-xl-4 p-2 SignupCard"
               style={{ marginLeft: "auto", backgroundColor: "#F3D6DC" }}
             >
-              <div className="card-body p-2" style={{ border: "2px solid black" }}>
+              <div
+                className="card-body p-2"
+                style={{ border: "2px solid black" }}
+              >
                 <form onSubmit={loginForm.handleSubmit}>
                   <div className="mb-md-5 mt-md-4 pb-1">
                     <h2 className="fw-bold mb-1 text-uppercase">Login</h2>
-                    <p className="mb-3">Please enter your Email and password!</p>
+                    <p className="mb-3">
+                      Please enter your Email and password!
+                    </p>
                     <div className="form-dark mb-2">
                       <label className="form-label " htmlFor="typeEmailX">
                         Email
@@ -89,7 +95,10 @@ const Login = () => {
                         Forgot password?
                       </a>
                     </p>
-                    <button type="submit" className="btn btn-danger btn-md btn-block">
+                    <button
+                      type="submit"
+                      className="btn btn-danger btn-md btn-block"
+                    >
                       Login
                     </button>
                     <div className="d-flex justify-content-center text-center mt-4 pt-1">
@@ -116,6 +125,8 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <br></br>
+      <Copyrightfooter />
     </>
   );
 };

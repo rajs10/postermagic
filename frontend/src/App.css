@@ -47,17 +47,22 @@
 .BackgroundImage{
   background-image: url('./components/main/images/signup.svg');
   background-repeat: no-repeat;
-  margin-left: 10%;
+  margin-left: 15%;
+  /* background-size: 30% ; */
 }
 .LoginForm{
   background-image: url('./components/main/images/loginp.png');
   background-repeat: no-repeat;
+  margin-left: 5%;
+  background-size: 55% ;
 }
+
 .contactbg{
   background-image: url('./components/main/images/contact.svg');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 60%;
   margin-left: 5%;
+  margin-top: 30%;
 }
 
 
