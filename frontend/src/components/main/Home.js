@@ -4,6 +4,7 @@ import OpenCamera from "./OpenCamera";
 import Footer from "./Footer";
 import Team from "./Team";
 import Page from "./Page";
+import Copyrightfooter from "./Copyrightfooter";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Page />
       <Team />
       <Footer />
+      <Copyrightfooter />
     </>
   );
 };

@@ -54,12 +54,18 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark m-0 p-0">
         {/* Container wrapper */}
 
         {/* Navbar brand */}
-        <a className="navbar-brand" href="/main/home">
-          <img src="/images/ar.png" height={30} alt="Logo" loading="lazy" />
+        <a className="navbar-brand m-0 p-1" href="/main/home">
+          <img
+            src="/images/ar.png"
+            className="m-0"
+            height={50}
+            alt="Logo"
+            loading="lazy"
+          />
         </a>
         {/* Toggle button */}
         <button
@@ -77,44 +83,32 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarButtonsExample">
           {/* Left links */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item" style={{ fontWeight: "bold" }}>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/main/home">
                 Home
               </NavLink>
             </li>
-            <li className="nav-item" style={{ fontWeight: "bold" }}>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/user/managevideos">
                 ManageVideo
               </NavLink>
             </li>
-            <li className="nav-item" style={{ fontWeight: "bold" }}>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/user/managemarkers">
                 ManageMarker
               </NavLink>
             </li>
-            <li className="nav-item" style={{ fontWeight: "bold" }}>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/user/generatemarker">
                 GenerateMarker
               </NavLink>
             </li>
-            <li className="nav-item" style={{ fontWeight: "bold" }}>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/main/ContactUs">
                 ContactUs
               </NavLink>
             </li>
           </ul>
-          <>
-            {/* Search form */}
-            <div className="md-form mt-0 me-3 mb-1">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </div>
-          </>
-
 
           {/* Left links */}
           <div className="d-flex align-items-center">

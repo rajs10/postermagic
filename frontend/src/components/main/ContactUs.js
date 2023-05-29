@@ -40,7 +40,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="contactbg mt-5">
-        <div className="container pt-2 mb-4">
+        <div className="container pt-2 mb-5">
           <div className="row d-flex justify-content-center align-items-center">
             <div
               className="card col-md-4 col-sm-3 col-xl-4 p-2 SignupCard"
@@ -103,25 +103,23 @@ const ContactUs = () => {
                   >
                     Send Message
                   </button>
-                  <p>
-                    <hr></hr>
-                    <div>
-                      <p className="mb-0">
-                        <i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
-                        BBD University, Lucknow
-                      </p>
-                      <p className="mb-0">
-                        <i className="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
-                        Phone: 8546072604, 7800477099
-                      </p>
-                      <p className="mb-0">
-                        <i className="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
-                          {" "}
-                        </i>{" "}
-                        Email: postermagicar@mail.com
-                      </p>
-                    </div>
-                  </p>
+                  <hr></hr>
+                  <div>
+                    <p className="mb-0">
+                      <i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
+                      BBD University, Lucknow
+                    </p>
+                    <p className="mb-0">
+                      <i className="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" />{" "}
+                      Phone: 8546072604, 7800477099
+                    </p>
+                    <p className="mb-0">
+                      <i className="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                        {" "}
+                      </i>{" "}
+                      Email: postermagicar@mail.com
+                    </p>
+                  </div>
                   {/* </form> */}
                 </form>
               </div>

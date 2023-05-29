@@ -54,7 +54,7 @@ const Login = () => {
           <div className="row d-flex justify-content-center align-items-center">
             <div
               className="card col-md-4 col-sm-3 col-xl-4 p-2 SignupCard"
-              style={{ marginLeft: "auto", backgroundColor: "#F3D6DC" }}
+              style={{ marginLeft: "50%", backgroundColor: "#F3D6DC" }}
             >
               <div
                 className="card-body p-2"
