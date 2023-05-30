@@ -60,56 +60,72 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         {/* Container wrapper */}
-        <div className="container">
-          {/* Navbar brand */}
-          <a className="navbar-brand" href="/main/home">
-            <img
-              src="/images/ar.png"
-              height={50}
-              alt="MDB Logo"
-              loading="lazy"
-            />
-          </a>
-          {/* Toggle button */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarButtonsExample"
-            aria-controls="navbarButtonsExample"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fas fa-bars" />
-          </button>
-          {/* Collapsible wrapper */}
-          <div className="collapse navbar-collapse" id="navbarButtonsExample">
-            {/* Left links */}
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/home">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/user/managemarkers">
-                  ManageMarker
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/user/managevideos">
-                  ManageVideo
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/main/about">
-                  About
-                </NavLink>
-              </li>
-            </ul>
-            {/* Left links */}
-            <div className="d-flex align-items-center">
-              {/* <NavLink
+        {/* Navbar brand */}
+        <a className="navbar-brand" href="/main/home">
+          <img
+            src="/images/ar.png"
+            height={50}
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        {/* Toggle button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i className="fas fa-bars" />
+        </button>
+        {/* Collapsible wrapper */}
+        <div className="collapse navbar-collapse" id="navbarButtonsExample">
+          {/* Left links */}
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/main/home">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/user/manageimages">
+                ManageMarker
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/user/managevideos">
+                ManageVideo
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/user/generatemarker">
+                GenerateMarker
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/main/about">
+                About
+              </NavLink>
+            </li>
+          </ul>
+          <>
+            {/* Search form */}
+            <div className="md-form mt-0">
+              <input
+                className="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </>
+
+          {/* Left links */}
+          <div className="d-flex align-items-center">
+            {/* <NavLink
                 to="/main/login"
                 className="btn btn-light"
                 data-mdb-ripple-color="dark"
@@ -119,12 +135,11 @@ const Navbar = () => {
               <NavLink to="/main/Signup" className="btn btn-dark">
                 SignUp
               </NavLink> */}
-              {showLoggedIn()}
-              {showLogout()}
-            </div>
+            {showLoggedIn()}
+            {showLogout()}
           </div>
-          {/* Collapsible wrapper */}
         </div>
+        {/* Collapsible wrapper */}
         {/* Container wrapper */}
       </nav>
       {/* Navbar */}

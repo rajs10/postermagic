@@ -34,46 +34,52 @@ const Carousel = () => {
             />
           </div>
           {/* Inner */}
-          <div className="carousel-inner">
+
+          <div className="carousel-inner -">
             {/* Single item */}
-            <div className="carousel-item active">
-              <img
-                src="https://s3.amazonaws.com/vice_asset_uploader/files/1412893640HowTo_1000.gif?crop=0.864xw:1xh;center,center&resize=500:*"
-                className="d-block w-100"
-                alt="Sunset Over the City"
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
+            <div className="h-50">
+              <div className="carousel-item active">
+                <img
+                  src="https://s3.amazonaws.com/vice_asset_uploader/files/1412893640HowTo_1000.gif?crop=0.864xw:1xh;center,center&resize=500:*"
+                  className="d-block w-100"
+                  alt="Sunset Over the City"
+                />
+                <div className="carousel-caption d-none d-md-block fw-bold ">
+                  <h5>Augmented Reality</h5>
+                  <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                </div>
               </div>
-            </div>
-            {/* Single item */}
-            <div className="carousel-item">
-              <img
-                src="https://media.giphy.com/media/cdyq28dtH4t3pvPftb/giphy.gif"
-                className="d-block w-100"
-                alt="Canyon at Nigh"
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              {/* Single item */}
+              <div className="carousel-item">
+                <img
+                  src="https://media.giphy.com/media/cdyq28dtH4t3pvPftb/giphy.gif"
+                  className="d-block w-100"
+                  alt="Canyon at Nigh"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
               </div>
-            </div>
-            {/* Single item */}
-            <div className="carousel-item">
-              <img
-                src="https://media.giphy.com/media/kBrhoxhovfucVXoHlR/giphy.gif"
-                className="d-block w-100"
-                alt="Cliff Above a Stormy Sea"
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+              {/* Single item */}
+              <div className="carousel-item">
+                <img
+                  src="https://media.giphy.com/media/cdyq28dtH4t3pvPftb/giphy.gif"
+                  className="d-block w-100"
+                  alt="Cliff Above a Stormy Sea"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -15,22 +15,13 @@ function Footer() {
             {/* Left */}
             {/* Right */}
             <div>
-              <a href="" className="me-4 link-secondary">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a href="" className="me-4 link-secondary">
-                <i className="fab fa-twitter" />
-              </a>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-google" />
               </a>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-instagram" />
               </a>
-              <a href="" className="me-4 link-secondary">
-                <i className="fab fa-linkedin" />
-              </a>
-              <a href="" className="me-4 link-secondary">
+              <a href="/" className="me-4 link-secondary">
                 <i className="fab fa-github" />
               </a>
             </div>
@@ -47,35 +38,33 @@ function Footer() {
                   {/* Content */}
                   <h6 className="text-uppercase fw-bold mb-4">
                     <i className="fas fa-gem me-3 text-secondary" />
-                    Company name
+                    Project Name
                   </h6>
-                  <p>
-                    Augmented Reality
-                  </p>
+                  <p>PosterMagicAR</p>
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                  <h6 className="text-uppercase fw-bold mb-4">Tools</h6>
                   <p>
-                    <a href="#!" className="text-reset">
-                      Angular
+                    <a href="https://www.mongodb.com/" className="text-reset">
+                      MongoDB
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
+                    <a href="https://react.dev/" className="text-reset">
                       React
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
-                      Vue
+                    <a href="https://nodejs.org/en" className="text-reset">
+                      Node.js
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
-                      Laravel
+                    <a href="https://expressjs.com/" className="text-reset">
+                      Express.js
                     </a>
                   </p>
                 </div>
@@ -83,25 +72,15 @@ function Footer() {
                 {/* Grid column */}
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+                  <h6 className="text-uppercase fw-bold mb-4">Company</h6>
                   <p>
-                    <a href="#!" className="text-reset">
-                      Pricing
+                    <a href="/main/Feedback" className="text-reset">
+                      Feedback
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-reset">
-                      Settings
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Orders
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Help
+                    <a href="/main/About" className="text-reset">
+                      About
                     </a>
                   </p>
                 </div>
@@ -111,20 +90,16 @@ function Footer() {
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                   <p>
-                    <i className="fas fa-home me-3 text-secondary" /> New York,
-                    NY 10012, US
+                    <i className="fas fa-home me-3 text-secondary" /> BBD
+                    University, Lucknow
                   </p>
                   <p>
                     <i className="fas fa-envelope me-3 text-secondary" />
-                    info@example.com
+                    postermagicar@gmail.com
                   </p>
                   <p>
-                    <i className="fas fa-phone me-3 text-secondary" /> + 01 234
-                    567 88
-                  </p>
-                  <p>
-                    <i className="fas fa-print me-3 text-secondary" /> + 01 234
-                    567 89
+                    <i className="fas fa-phone me-3 text-secondary" />
+                    8546072604, 7800477099
                   </p>
                 </div>
                 {/* Grid column */}
@@ -134,15 +109,7 @@ function Footer() {
           </section>
           {/* Section: Links  */}
           {/* Copyright */}
-          <div
-            className="text-center p-4"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.025)" }}
-          >
-            © 2021 Copyright:
-            <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              PosterMagic
-            </a>
-          </div>
+          
           {/* Copyright */}
         </footer>
         {/* Footer */}

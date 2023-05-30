@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import Main from "./components/main";
@@ -15,8 +14,10 @@ import UserProvider from './context/UserProvider';
 import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
 import PlayAR from './components/user/PlayAR';
-import ManageImage from './components/user/ManageMarkers';
-import PatternGenerator from './components/user/PatternGenerator';
+import ManageImage from './components/user/ManageMarker';
+import ContactUs from './components/main/ContactUs';
+import Feedback from './components/main/Feedback';
+
 
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
               <Route path='navbar' element={<Navbar />} />
               <Route path='Login' element={<Login />} />
               <Route path='About' element={<About />} />
+              <Route path='Feedback' element={<Feedback />} />
+              <Route path='ContactUs' element={<ContactUs />} />
               <Route path='arviewer' element={<ARViewer />} />
               <Route path='index' element={<index />} />
             </Route>

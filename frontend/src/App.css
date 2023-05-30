@@ -4,11 +4,14 @@
   color: red;
 }
 
+.navbar{
+  color: white !important;
+}
 
 .nav-item .active{
   font-weight: bold;
-  color: blueviolet !important;
-  border-bottom: 2px solid blueviolet;
+  color: rgb(250, 8, 8) !important;
+  border-bottom: 2px solid rgb(245, 16, 16);
   max-width: fit-content;
 }
 
@@ -30,6 +33,45 @@
 
 
 }
+#carouselBasicExample{
+  height: 60vh;
+}
+#carouselBasicExample img{
+  height: 60vh; 
+}
+/* .singnupContainer{
+  display: block;
+  justify-content: right !important;
+  float: right !important;
+} */
+.BackgroundImage{
+  background-image: url('./components/main/images/signup.svg');
+  background-repeat: no-repeat;
+  margin-left: 15%;
+  /* background-size: 30% ; */
+}
+.LoginForm{
+  background-image: url('./components/main/images/login.svg');
+  background-repeat: no-repeat;
+  margin-left: 15%;
+  background-size: 50% ;
+}
+
+.contactbg{
+  background-image: url('./components/main/images/contact.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  margin-left: 5%;
+  margin-top: 30%;
+}
+
+.feedbackbg{
+  background-image: url('./components/main/images/feedback.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  margin-left: 5%;
+  margin-top: 30%;
+}
 
 
 .gradient-custom {
@@ -41,5 +83,40 @@
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(4, 53, 22, 0.5), rgba(254,249,215,0.5))
+}
+
+@media only screen and (max-width: 600px) {
+  .SignupCard{
+    margin: 5% !important;
+  }
+  .BackgroundImage{
+    margin: 5% !important;
+  }
+  .LoginForm{
+    margin: 5% !important;
+  }
+  .contactbg{
+    margin: 5% !important;
+  }
+  .feedbackbg{
+    margin: 5% !important;
+   
+  }
+  /* .SignupCard{
+    background-size: 0%;
+  } */
+  .BackgroundImage{
+    background-size: 0%;
+  }
+  .LoginForm{
+    background-size: 0%;
+  }
+  .contactbg{
+    background-size: 0%;
+  }
+  .feedbackbg{
+    background-size: 0%;
+  }
+  
 }
 
