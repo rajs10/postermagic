@@ -16,6 +16,7 @@ import { useState } from 'react';
 import GenerateMarker from './components/user/GenerateMarker';
 import PlayAR from './components/user/PlayAR';
 import ManageImage from './components/user/ManageMarkers';
+import PatternGenerator from './components/user/PatternGenerator';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               <Route path='managemarkers' element={<GenerateMarker />} />
               <Route path='managevideos' element={<ManageVideos />} />
               <Route path='generatemarker' element={<GenerateMarker/>}/>
+              <Route path='patterngenerator' element={<PatternGenerator imagePath={'/images/ar.png'}/>}/>
               <Route path='arplayer' element={<PlayAR/>}/>
             </Route>
 
