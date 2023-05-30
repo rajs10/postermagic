@@ -37,7 +37,7 @@ const Login = () => {
         const data = await res.json();
         sessionStorage.setItem("user", JSON.stringify(data));
 
-        navigate("/user/managevideos");
+        navigate("/user/GeneratePoster");
       } else if (res.status === 401) {
         Swal.fire({
           icon: "error",

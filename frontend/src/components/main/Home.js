@@ -10,10 +10,6 @@ const Home = () => {
   return (
     <>
       <OpenCamera />
-      {/* <Carousel /> */}
-      <Page />
-      <Team />
-      <Footer />
       <Copyrightfooter />
     </>
   );

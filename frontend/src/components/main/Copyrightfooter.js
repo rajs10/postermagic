@@ -4,7 +4,7 @@ function Copyrightfooter() {
   return (
     <>
       <div
-        className="text-center p-2 mt-3"
+        className="text-center p-1 mt-3 fixed-bottom"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.025)" }}
       >
         © 2023 Copyright:

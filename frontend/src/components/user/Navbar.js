@@ -41,7 +41,7 @@ const Navbar = () => {
           {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
                   Logout
               </button> */}
-          <button type="button" className="btn btn-primary me-3 mb-2" onClick={logout}>
+          <button type="button" className="btn btn-danger me-3 mb-2" onClick={logout}>
             LogOut
           </button>
           {/* // </li> */}
@@ -58,14 +58,15 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark m-0 p-0">
         {/* Container wrapper */}
         {/* Navbar brand */}
-        <a className="navbar-brand" href="/main/home">
+        <a className="navbar-brand m-0 p-1" href="/main/home">
           <img
             src="/images/ar.png"
+            className="m-0"
             height={50}
-            alt="MDB Logo"
+            alt="Logo"
             loading="lazy"
           />
         </a>
@@ -111,38 +112,13 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <>
-            {/* Search form */}
-            <div className="md-form mt-0">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </div>
-          </>
-
           {/* Left links */}
           <div className="d-flex align-items-center">
-            {/* <NavLink
-                to="/main/login"
-                className="btn btn-light"
-                data-mdb-ripple-color="dark"
-              >
-                Login
-              </NavLink>
-              <NavLink to="/main/Signup" className="btn btn-dark">
-                SignUp
-              </NavLink> */}
             {showLoggedIn()}
             {showLogout()}
           </div>
         </div>
-        {/* Collapsible wrapper */}
-        {/* Container wrapper */}
       </nav>
-      {/* Navbar */}
     </>
   );
 };
