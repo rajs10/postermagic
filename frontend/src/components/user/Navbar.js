@@ -101,8 +101,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/user/generatemarker">
-                GenerateMarker
+              <NavLink className="nav-link" to="/user/postergenerator">
+                Create AR Poster
               </NavLink>
             </li>
             <li className="nav-item">

@@ -8,6 +8,8 @@ const ManageVideos = () => {
   const [video, setVideo] = useState([])
   const [loading, setLoading] = useState(true);
 
+  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
+
   const url = 'http://localhost:5000';
 
   const addVideotoDb = async (filename) => {
@@ -18,7 +20,7 @@ const ManageVideos = () => {
       method: 'POST',
       body: JSON.stringify({
         video: filename,
-        // user: currentUser._id,
+        user: currentUser._id,
         createdAt: new Date()
       }),
       headers: {
