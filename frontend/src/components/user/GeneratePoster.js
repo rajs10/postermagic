@@ -30,6 +30,7 @@ const GeneratePoster = () => {
     });
 
     console.log(res.status);
+    
   };
 
   const uploadPatternFile = (e) => {
