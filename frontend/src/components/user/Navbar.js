@@ -102,7 +102,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/user/postergenerator">
+              <NavLink className="nav-link" to="/user/GeneratePoster">
                 Create AR Poster
               </NavLink>
             </li>
