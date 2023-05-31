@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function OpenCamera() {
   return (
     <>
-      <div className="fluid-container bg-dark mt-4" style={{ height: "100%" }}>
+      <div className="fluid-container bg-dark mt-2" style={{ height: "100%" }}>
         <div className="container py-5 text-light my-1">
           <div className="row mb-4 align-items-center flex-lg-row-reverse">
             <div
