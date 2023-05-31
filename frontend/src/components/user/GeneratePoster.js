@@ -72,6 +72,18 @@ const GeneratePoster = () => {
     // setSelImage(data[0]._id);
   };
 
+  const getUserPosters = async () => {
+    const res = await fetch(url + '/marker/getbyuser/' + currentUser._id);
+    if (res.status === 200) {
+      const data = await res.json();
+      console.log(data);
+    }
+  };
+
+  useEffect(() => {
+    getUserPosters();
+  }, []);
+
   useEffect(() => {
     fetchUserVideos();
     fetchUserImages();
