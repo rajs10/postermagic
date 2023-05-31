@@ -93,13 +93,13 @@ const GeneratePoster = () => {
             style={{
               height: "30vh",
               backgroundImage:
-                "url('https://cdn.shopify.com/s/files/1/0070/7032/files/best_20free_20background_20remover.jpg?v=1681162331')",
+                "url('https://i.pinimg.com/originals/63/7a/4d/637a4d42e1738853b2f96ffbbd60622a.gif')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100%",
             }}
           >
             <h1
-              style={{ color: "black", fontWeight: "bolder", fontSize: "8vw" }}
+              style={{ color: "pink", fontWeight: "bolder", fontSize: "8vw" }}
             >
               Generate Poster
             </h1>
