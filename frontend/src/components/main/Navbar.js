@@ -100,13 +100,37 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/user/generatemarker">
-                GenerateMarker
+                Create AR poster
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/main/ContactUs">
-                ContactUs
-              </NavLink>
+            <li className="me-3 me-lg-0 dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact us
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <NavLink className="dropdown-item" to="/main/ContactUs">
+                    Contact us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/main/about">
+                    About us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/main/feedback">
+                    Feedback
+                  </NavLink>
+                </li>
+              </ul>
             </li>
           </ul>
 

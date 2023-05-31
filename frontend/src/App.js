@@ -1,27 +1,37 @@
-import './App.css';
-import { BrowserRouter, NavLink, Navigate, Route, Routes } from 'react-router-dom';
-import Main from './components/main';
-import Home from './components/main/Home';
-import About from './components/main/About';
-import Signup from './components/main/Signup';
-import Navbar from './components/main/Navbar';
-import Login from './components/main/Login';
-import ARViewer from './components/main/ARViewer';
-import ManageVideos from './components/user/ManageVideos';
-import User from './components/user';
-import UserAuth from './auth/UserAuth';
-import UserProvider from './context/UserProvider';
-import { useState } from 'react';
-import GenerateMarker from './components/user/GenerateMarker';
-import PlayAR from './components/user/PlayAR';
-import ManageImage from './components/user/ManageMarker';
-import ContactUs from './components/main/ContactUs';
-import Feedback from './components/main/Feedback';
-import PatternGenerator from './components/user/PatternGenerator';
-import GeneratePoster from './components/user/GeneratePoster';
+import "./App.css";
+import {
+  BrowserRouter,
+  NavLink,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Main from "./components/main";
+import Home from "./components/main/Home";
+import About from "./components/main/About";
+import Signup from "./components/main/Signup";
+import Navbar from "./components/main/Navbar";
+import Login from "./components/main/Login";
+import ARViewer from "./components/main/ARViewer";
+import ManageVideos from "./components/user/ManageVideos";
+import User from "./components/user";
+import UserAuth from "./auth/UserAuth";
+import UserProvider from "./context/UserProvider";
+import { useState } from "react";
+import GenerateMarker from "./components/user/GenerateMarker";
+import PlayAR from "./components/user/PlayAR";
+import ManageImage from "./components/user/ManageMarker";
+import ContactUs from "./components/main/ContactUs";
+import Feedback from "./components/main/Feedback";
+import PatternGenerator from "./components/user/PatternGenerator";
+import GeneratePoster from "./components/user/GeneratePoster";
+import Marker from "./components/user/Marker";
+
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem("user"))
+  );
   return (
     <div>
       <BrowserRouter>
@@ -43,8 +53,8 @@ function App() {
               path="user"
               element={
                 <UserAuth>
-                  {' '}
-                  <User />{' '}
+                  {" "}
+                  <User />{" "}
                 </UserAuth>
               }
             >
@@ -53,8 +63,13 @@ function App() {
               <Route path="managemarkers" element={<GenerateMarker />} />
               <Route path="managevideos" element={<ManageVideos />} />
               <Route path="generatemarker" element={<GenerateMarker />} />
-              <Route path="patterngenerator" element={<PatternGenerator imagePath={'/images/ar.png'} />} />
-              <Route path="postergenerator" element={<GeneratePoster />} />
+              <Route path="marker" element={<Marker/>} />
+
+              <Route
+                path="patterngenerator"
+                element={<PatternGenerator imagePath={"/images/ar.png"} />}
+              />
+              <Route path="GeneratePoster" element={<GeneratePoster />} />
               <Route path="arplayer" element={<PlayAR />} />
             </Route>
           </Routes>

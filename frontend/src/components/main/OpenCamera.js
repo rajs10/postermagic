@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function OpenCamera() {
   return (
     <>
-      <div className="fluid-container bg-dark mt-1" style={{ height: "90vh" }}>
+      <div className="fluid-container bg-dark mt-2" style={{ height: "100%" }}>
         <div className="container py-5 text-light my-1">
           <div className="row mb-4 align-items-center flex-lg-row-reverse">
             <div
@@ -39,9 +40,13 @@ function OpenCamera() {
                 </div>
               </div>
               <div className="lc-block">
-                <a className="btn btn-danger" href="ARviewer" role="button">
-                  Open Camera
-                </a>
+                <NavLink
+                  className="btn btn-danger btn-lg"
+                  to="../Login"
+                  role="button"
+                >
+                  Get Started
+                </NavLink>
               </div>
               {/* /lc-block */}
             </div>

@@ -3,14 +3,12 @@ import React from "react";
 function Team() {
   return (
     <>
-      <div className="mt-4 mb-4 text-center bg-red text-info">
-        <h2>
+      <div className="container-fluid mt-4 mb-4 text-center text-danger fw-bold fs-5">
+        <p>
           Example Based on Augmented Reality
-          <span className="badge badge-primary"></span>
-        </h2>
-      </div>
-      <div className="">
-        <div className="row row-cols-1 row-cols-md-4 g-5 p-2">
+        </p>
+
+        <div className="row row-cols-1 row-cols-md-4 p-2">
           <div className="col">
             <div className="card h-100 ">
               <img
@@ -47,7 +45,7 @@ function Team() {
               />
             </div>
           </div>
-        </div>
+        </div >
       </div>
     </>
   );
