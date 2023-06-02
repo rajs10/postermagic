@@ -32,7 +32,7 @@ const ManageVideos = () => {
       Swal.fire({
         icon: 'success',
         title: 'Nice',
-        text: 'you have successfully registered'
+        text: 'Video feched'
       });
     } else {
       Swal.fire({
@@ -111,7 +111,7 @@ const ManageVideos = () => {
       >
         <div className="container">
           <div className="card mb-3">
-            <div className="card-body">
+            <div className="card-body ">
               <label className="form-label upload-label" htmlFor="image">
                 <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Manage Video
               </label>
