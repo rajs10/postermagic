@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import app_config from "../../config";
 import Swal from "sweetalert2";
 import Copyrightfooter from "../main/Copyrightfooter";
+import { useNavigate } from "react-router-dom";
 
 const GeneratePoster = () => {
   const url = app_config.apiUrl;
@@ -12,6 +13,8 @@ const GeneratePoster = () => {
 
   const [videoList, setVideoList] = useState([]);
   const [imageList, setImageList] = useState([]);
+
+  const navigate = useNavigate();
 
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(sessionStorage.getItem("user"))
@@ -33,7 +36,20 @@ const GeneratePoster = () => {
     });
 
     console.log(res.status);
-    
+    if(res.status === 200){
+      Swal.fire({
+        icon: "success",
+        title: "Nice",
+        text: "Poster Created Successfully",
+      });
+      navigate('/user/manageposters');
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "Oops",
+        text: "Something went wrong",
+      });
+    }
   };
 
   const uploadPatternFile = (e) => {
@@ -69,7 +85,7 @@ const GeneratePoster = () => {
     const data = await res.json();
     console.log(data);
     setImageList(data);
-    // setSelImage(data[0]._id);
+    setSelImage(data[0]._id);
   };
 
   const getUserPosters = async () => {
@@ -130,10 +146,10 @@ const GeneratePoster = () => {
                     <h4>Select Poster Marker Pattern</h4>
                   </div>
                   <div className="card-body">
-                    <input type="file" onChange={uploadPatternFile} />
-                    <label className="btn btn-success mt-3">
+                    <input type="file" onChange={uploadPatternFile} id="patternfile" hidden />
+                    <label className="btn btn-success w-100"  htmlFor="patternfile">
                       {" "}
-                      <i className="fas fa-upload "></i> Upload{" "}
+                      <i className="fas fa-upload "></i> Upload
                     </label>
                   </div>
                 </div>
@@ -167,7 +183,7 @@ const GeneratePoster = () => {
                       onChange={(e) => setSelImage(e.target.value)}
                     >
                       {imageList.map((image) => {
-                        return <option value={image._id}>{image.name}</option>;
+                        return <option value={image._id}>{image.image}</option>;
                       })}
                     </select>
                   </div>

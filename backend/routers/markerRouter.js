@@ -52,7 +52,7 @@ router.get("/getbyvideo/:id", (req, res) => {
 });
 
 router.get("/getbyuser/:id", (req, res) => {
-  Model.find({user : req.params.id})
+  Model.find({user : req.params.id}).populate('image').populate('video')
     .then((result) => {
       res.json(result);
     })
@@ -64,6 +64,17 @@ router.get("/getbyuser/:id", (req, res) => {
 
 router.get("/getbyid/:id", (req, res) => {
   Model.findById(req.params.id)
+    .then((result) => {
+      res.json(result);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json(err);
+    });
+});
+
+router.delete("/delete/:id", (req, res) => {
+  Model.findByIdAndDelete(req.params.id)
     .then((result) => {
       res.json(result);
     })
