@@ -99,7 +99,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/user/generatemarker">
+              <NavLink className="nav-link" to="/user/generateposter">
                 Create AR poster
               </NavLink>
             </li>
