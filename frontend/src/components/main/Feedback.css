@@ -30,7 +30,3 @@
 
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
 
-/* h1{
-    margin-top:150px;
-} */
-

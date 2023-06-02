@@ -1,45 +1,48 @@
 import React from 'react'
+import retail from './images/retail.gif'
+import education from './images/education.gif'
+import entertainment from './images/entertainment.gif'
+import tourism from './images/tourism.gif'
 
 const Page = () => {
     return (
-        <div className=' mt-3'>
-            <div className="card">
-                <div className="mt-3 text-info text-center"><h2>
-                    Our built-in solution<span className="badge badge-primary"></span>
+        <div className=' mt-3'> 
+                <div className="mt-3 text-center text-danger"><h2>
+                    Our built-in solution
                 </h2>
                 </div>
-
                 <><div className='text-center'>
                     <>
                         <a href='#Retail'
                             type="button"
-                            className="btn btn-outline-secondary btn-rounded m-2"
+                            className="btn btn-outline-danger btn-rounded m-2"
                             data-mdb-ripple-color="dark"
                         >
                             Retail
                         </a>
                         <a href='#Education'
                             type="button"
-                            className="btn btn-outline-secondary btn-rounded m-2"
+                            className="btn btn-outline-danger btn-rounded m-2"
                             data-mdb-ripple-color="dark"
                         >
                             Education
                         </a>
                         <a href='#Tourism'
                             type="button"
-                            className="btn btn-outline-secondary btn-rounded m-2"
+                            className="btn btn-outline-danger btn-rounded m-2"
                             data-mdb-ripple-color="dark"
                         >
                             Tourism
                         </a>
                         <a href='#Entertainment'
                             type="button"
-                            className="btn btn-outline-secondary btn-rounded m-2"
+                            className="btn btn-outline-danger btn-rounded m-2"
                             data-mdb-ripple-color="dark"
                         >
                             Entertainment
                         </a>
                     </>
+                    <hr className='mt-1 mb-1'></hr>
                 </div>
                 </>
 
@@ -51,15 +54,16 @@ const Page = () => {
                         </p>
                     </div>
                     <div className="p-2 flex-shrink-1" id='Retail'><img
-                        src="https://jingdaily.com/wp-content/uploads/2018/04/4718000514da94aa0992.gif"
+                        src={retail}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Retail"
                     />
                     </div>
                 </div>
+                <hr className='mt-1 mb-1'></hr>
                 <div className="d-flex">
                     <div className="p-2 flex-shrink-1" id='Education'><img
-                        src="https://diui35v2plbz7.cloudfront.net/blogs/20191124221446.gif"
+                        src={education}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Education"
                     />
@@ -70,26 +74,25 @@ const Page = () => {
 
                         </p>
                     </div>
-
                 </div>
+                <hr className='mt-1 mb-1'></hr>
                 <div className="d-flex">
                     <div className="p-2 w-100" id='Tourism'><h3 className="card-title">Tourism</h3>
                         <p className="card-text">
                             Experience a new dimension of tourism with Postermagic AR! Scan posters and embark on virtual adventures that transport you to iconic landmarks and breathtaking destinations. Explore ancient ruins, stroll through bustling cities, or relax on pristine beaches, all from the comfort of your surroundings. Postermagic AR provides interactive guides, historical insights, and immersive storytelling, making every trip a memorable and educational experience. Whether planning your next vacation or reliving past travels, let Postermagic AR ignite your wanderlust and bring the world to your fingertips. Discover the wonders of the world like never before!
-
-
                         </p>
                     </div>
                     <div className="p-2 flex-shrink-1"><img
-                        src="https://i.gifer.com/D6bd.gif"
+                        src={tourism}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Tourism"
                     />
                     </div>
                 </div>
+                <hr className='mt-1 mb-1'></hr>
                 <div className="d-flex">
                     <div className="p-2 flex-shrink-1" id='Entertainment'><img
-                        src="https://cdn.dribbble.com/users/361263/screenshots/5028034/ee.gif"
+                        src={entertainment}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Entertainment"
                     />
@@ -101,7 +104,7 @@ const Page = () => {
                     </div>
 
                 </div>
-            </div>
+            
         </div>
     )
 }

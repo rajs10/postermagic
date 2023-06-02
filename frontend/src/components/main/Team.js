@@ -4,9 +4,9 @@ function Team() {
   return (
     <>
       <div className="container-fluid mt-4 mb-4 text-center text-danger fw-bold fs-5">
-        <p>
+        <h2>
           Example Based on Augmented Reality
-        </p>
+        </h2>
 
         <div className="row row-cols-1 row-cols-md-4 p-2">
           <div className="col">
