@@ -98,7 +98,7 @@ const GeneratePoster = () => {
             "url('https://img.freepik.com/free-photo/blue-purple-background-with-gradient-sky-word-love-it_1340-36620.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
-          minWidth:"100%"
+          minHeight:"100vh"
               
 
         }}
