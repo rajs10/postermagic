@@ -98,11 +98,14 @@ const GeneratePoster = () => {
             "url('https://img.freepik.com/free-photo/blue-purple-background-with-gradient-sky-word-love-it_1340-36620.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
+          minWidth:"100%"
+              
+
         }}
       >
         <header className="pt-5">
           <div
-            className="container-fluid  text-center py-5"
+            className="container-fluid  text-center py-5 p-3"
             style={{
               height: "30vh",
               backgroundImage:
@@ -149,10 +152,7 @@ const GeneratePoster = () => {
                         return <option value={video._id}>{video.video}</option>;
                       })}
                     </select>
-                    <label className="btn btn-success mt-3">
-                      {" "}
-                      <i className="fas fa-upload "></i> Upload{" "}
-                    </label>
+                    
                   </div>
                 </div>
               </div>
@@ -170,10 +170,6 @@ const GeneratePoster = () => {
                         return <option value={image._id}>{image.name}</option>;
                       })}
                     </select>
-                    <label className="btn btn-success mt-3">
-                      {" "}
-                      <i className="fas fa-upload "></i> Upload{" "}
-                    </label>
                   </div>
                 </div>
               </div>

@@ -7,12 +7,7 @@ import Copyrightfooter from "./Copyrightfooter";
 const Feedback = () => {
   const FeedbackForm = useFormik({
     initialValues: {
-      Verygood: "",
-      Good: "",
-      Medicore: "",
-      Bad: "",
-      Verybad: "",
-      Yourfeedback: "",
+      
     },
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       //setSubmitting(true);
@@ -53,7 +48,7 @@ const Feedback = () => {
               style={{
                 marginLeft: "65%",
                 backgroundColor: "#F3D6DC",
-                height: "75vh",
+                height: "75%",
               }}
             >
               <div
