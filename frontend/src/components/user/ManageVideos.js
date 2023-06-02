@@ -32,7 +32,7 @@ const ManageVideos = () => {
       Swal.fire({
         icon: 'success',
         title: 'Nice',
-        text: 'Video feched'
+        text: 'Video fetched'
       });
     } else {
       Swal.fire({
