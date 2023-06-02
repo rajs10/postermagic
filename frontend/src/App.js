@@ -25,6 +25,7 @@ import ContactUs from "./components/main/ContactUs";
 import Feedback from "./components/main/Feedback";
 import PatternGenerator from "./components/user/PatternGenerator";
 import GeneratePoster from "./components/user/GeneratePoster";
+import ManagePosters from "./components/user/ManagePosters";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(
@@ -59,6 +60,7 @@ function App() {
               {/* <Route path='user' element={ <User /> }> */}
               <Route path="manageimages" element={<ManageImage />} />
               <Route path="managemarkers" element={<GenerateMarker />} />
+              <Route path="manageposters" element={<ManagePosters />} />
               <Route path="managevideos" element={<ManageVideos />} />
               <Route path="generatemarker" element={<GenerateMarker />} />
 
