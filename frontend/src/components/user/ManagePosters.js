@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import Swal from 'sweetalert2';
-import app_config from '../../config';
+import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
+import app_config from "../../config";
 
 const ManagePosters = () => {
   const [loading, setLoading] = useState(true);
@@ -8,33 +8,35 @@ const ManagePosters = () => {
 
   const url = app_config.apiUrl;
 
-  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem("user"))
+  );
 
   const deletePoster = async (id) => {
-    const res = await fetch(url + '/marker/delete/' + id, {
-      method: 'DELETE'
+    const res = await fetch(url + "/marker/delete/" + id, {
+      method: "DELETE",
     });
 
     if (res.status === 200) {
       fetchPosters();
       Swal.fire({
-        icon: 'success',
-        title: 'Success',
-        text: 'Deleted Successfully!'
+        icon: "success",
+        title: "Success",
+        text: "Deleted Successfully!",
       });
       fetchPosters();
-    }else{
+    } else {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong!'
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
       });
     }
   };
 
   const fetchPosters = async () => {
     setLoading(true);
-    const res = await fetch(url + '/marker/getbyuser/' + currentUser._id);
+    const res = await fetch(url + "/marker/getbyuser/" + currentUser._id);
     console.log(res.status);
     if (res.status === 200) {
       const data = await res.json();
@@ -49,21 +51,27 @@ const ManagePosters = () => {
   }, []);
 
   const displayPosters = () => {
-    const arUrl = 'http://127.0.0.1:5501/';
+    const arUrl = "http://127.0.0.1:5501/";
     return posterList.map((poster) => (
       <div className="col-md-4">
-        
         <div className="card">
-          <img src={url+'/'+poster.image.image} alt=""/>
+          <img src={url + "/" + poster.image} alt="Poster manager" />
           <div className="card-body">
-            <a target="_blank" href={`${arUrl}?ar=${poster._id}`}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={`${arUrl}?ar=${poster._id}`}
+            >
               View Poster in AR
             </a>
           </div>
           <div className="card-footer">
-          <button className="btn btn-danger" onClick={(e) => deletePoster(poster._id)}>
-            Delete
-          </button>
+            <button
+              className="btn btn-danger"
+              onClick={(e) => deletePoster(poster._id)}
+            >
+              Delete
+            </button>
           </div>
         </div>
       </div>
@@ -75,8 +83,8 @@ const ManagePosters = () => {
       style={{
         backgroundImage:
           "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')",
-        backgroundSize: 'cover',
-        minHeight: '100vh'
+        backgroundSize: "cover",
+        minHeight: "100vh",
       }}
     >
       <div className="container py-5">
