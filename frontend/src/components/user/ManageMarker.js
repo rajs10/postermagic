@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const ManageImage = () => {
-  // const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
+  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
   const [loading, setLoading] = useState(true);
   const [markerList, setMarkerList] = useState([]);
 
@@ -18,7 +18,7 @@ const ManageImage = () => {
       method: "POST",
       body: JSON.stringify({
         image: filename,
-        // user: currentUser._id,
+        user: currentUser._id,
         createdAt: new Date(),
       }),
       headers: {
@@ -32,6 +32,7 @@ const ManageImage = () => {
         title: "Nice",
         text: "you have successfully uploded",
       });
+      fetchImage();
     } else {
       Swal.fire({
         icon: "error",
@@ -103,7 +104,7 @@ const ManageImage = () => {
         <div className="card mb-5">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
-              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Marker
+              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload
               Image
             </label>
             <input hidden type="file" id="image" onChange={uploadFile} />
@@ -166,6 +167,7 @@ const ManageImage = () => {
         backgroundImage:
           "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')",
         backgroundSize: "cover",
+        minHeight: "100vh",
       }}
     >
       {displayImage()}

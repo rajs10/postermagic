@@ -93,7 +93,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/user/manageimages">
-                ManageMarker
+                Manage Images
               </NavLink>
             </li>
             <li className="nav-item">
