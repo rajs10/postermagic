@@ -54,7 +54,7 @@ const ManagePosters = () => {
       <div className="col-md-4">
         
         <div className="card">
-          <img src={url+'/'+poster.image.image} alt=""/>
+          <img src={poster.image ? (url+'/'+poster.image.image) : ''} alt=""/>
           <div className="card-body">
             <a target="_blank" href={`${arUrl}?ar=${poster._id}`}>
               View Poster in AR
