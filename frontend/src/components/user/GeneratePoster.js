@@ -36,14 +36,14 @@ const GeneratePoster = () => {
     });
 
     console.log(res.status);
-    if(res.status === 200){
+    if (res.status === 200) {
       Swal.fire({
         icon: "success",
         title: "Nice",
         text: "Poster Created Successfully",
       });
-      navigate('/user/manageposters');
-    }else{
+      navigate("/user/manageposters");
+    } else {
       Swal.fire({
         icon: "error",
         title: "Oops",
@@ -89,7 +89,7 @@ const GeneratePoster = () => {
   };
 
   const getUserPosters = async () => {
-    const res = await fetch(url + '/marker/getbyuser/' + currentUser._id);
+    const res = await fetch(url + "/marker/getbyuser/" + currentUser._id);
     if (res.status === 200) {
       const data = await res.json();
       console.log(data);
@@ -107,17 +107,15 @@ const GeneratePoster = () => {
 
   return (
     <>
-      <div className="image-fluid backgroundattachment-fixed "
+      <div
+        className="image-fluid backgroundattachment-fixed "
         style={{
           height: "100vh",
           backgroundImage:
-            "url('https://img.freepik.com/free-photo/blue-purple-background-with-gradient-sky-word-love-it_1340-36620.jpg')",
+            "url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
-          minHeight:"100%"
-          
-          
-
+          minHeight: "100%",
         }}
       >
         <header className="pt-5">
@@ -147,8 +145,16 @@ const GeneratePoster = () => {
                     <h4>Select Poster Marker Pattern</h4>
                   </div>
                   <div className="card-body">
-                    <input type="file" onChange={uploadPatternFile} id="patternfile" hidden />
-                    <label className="btn btn-success w-100"  htmlFor="patternfile">
+                    <input
+                      type="file"
+                      onChange={uploadPatternFile}
+                      id="patternfile"
+                      hidden
+                    />
+                    <label
+                      className="btn btn-success w-100"
+                      htmlFor="patternfile"
+                    >
                       {" "}
                       <i className="fas fa-upload "></i> Upload
                     </label>
@@ -169,7 +175,6 @@ const GeneratePoster = () => {
                         return <option value={video._id}>{video.video}</option>;
                       })}
                     </select>
-                    
                   </div>
                 </div>
               </div>

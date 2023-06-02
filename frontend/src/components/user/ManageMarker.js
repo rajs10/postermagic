@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import Copyrightfooter from "../main/Copyrightfooter";
 
 const ManageImage = () => {
-  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
+  const [currentUser, setCurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem("user"))
+  );
   const [loading, setLoading] = useState(true);
   const [markerList, setMarkerList] = useState([]);
 
@@ -100,40 +103,29 @@ const ManageImage = () => {
 
   const displayImage = () => {
     return (
-      <div className="container">
-        <div className="card mb-5">
+      <div className="container pt-4">
+        <div className="card shadow-0 border rounded-3">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
-              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload
-              Image
+              <i class="fa fa-arrow-up" aria-hidden="true"></i> Upload Image
             </label>
             <input hidden type="file" id="image" onChange={uploadFile} />
           </div>
         </div>
-        <div className=""></div>
-        <section>
-          <div className="container py-5">
-            <div className="row">
-              {markerList.map((marker) => (
-                <div className="col-md-4">
-                  <div className="mb-4">
-                    <button
-                      className="btn btn-danger"
-                      onClick={(e) => deleteMarker(marker._id)}
-                    >
-                      Delete
-                    </button>
-                    <div className="bg-image hover-zoom ripple shadow-1-strong rounded">
-                      <img
-                        src={url + "/" + marker.image}
-                        className="w-100"
-                        alt="managemarker"
-                      />
-                      <a href="#!">
-                        <div
-                          className="mask"
-                          style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
-                        >
+        <div className="container py-5">
+          <div className="row">
+            {markerList.map((marker) => (
+              <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                <div className="card shadow-0 border rounded-3">
+                  <div className="card-body">
+                    <div className="mb-4">
+                      <div className="bg-image ripple shadow-1-strong rounded">
+                        <img
+                          src={url + "/" + marker.image}
+                          className="w-100"
+                          alt="managemarker"
+                        />
+                        <a href="#!">
                           <div className="d-flex justify-content-start align-items-start h-100">
                             <h5>
                               <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
@@ -141,37 +133,46 @@ const ManageImage = () => {
                               </span>
                             </h5>
                           </div>
-                        </div>
-                        <div className="hover-overlay">
-                          <div
-                            className="mask"
-                            style={{
-                              backgroundColor: "rgba(253, 253, 253, 0.15)",
-                            }}
-                          />
-                        </div>
-                      </a>
+                          <div className="hover-overlay">
+                            <div
+                              className="mask"
+                              style={{
+                                backgroundColor: "rgba(253, 253, 253, 0.15)",
+                              }}
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <button
+                        className="btn btn-danger btn-lg btn-block mt-2"
+                        onClick={(e) => deleteMarker(marker._id)}
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
       </div>
     );
   };
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url('https://img.freepik.com/premium-photo/laptop-retro-camera-white-background-with-green-leaves-concept-unity-with-nature-eco-still-life-top-view_175682-7110.jpg?w=740')",
-        backgroundSize: "cover",
-        minHeight: "100vh",
-      }}
-    >
-      {displayImage()}
-    </div>
+    <>
+      <div
+        style={{
+          backgroundImage:
+            "url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg')",
+          backgroundSize: "cover",
+          minHeight: "100vh",
+        }}
+      >
+        {displayImage()}
+      </div>
+      <Copyrightfooter />
+    </>
   );
 };
 
