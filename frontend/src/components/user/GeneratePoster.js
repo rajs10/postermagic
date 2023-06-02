@@ -107,15 +107,16 @@ const GeneratePoster = () => {
 
   return (
     <>
-      <div className="image-fluid "
+      <div className="image-fluid backgroundattachment-fixed "
         style={{
           height: "100vh",
           backgroundImage:
             "url('https://img.freepik.com/free-photo/blue-purple-background-with-gradient-sky-word-love-it_1340-36620.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
-          minWidth:"100%"
-              
+          minHeight:"100%"
+          
+          
 
         }}
       >
