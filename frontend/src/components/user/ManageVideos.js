@@ -111,7 +111,7 @@ const ManageVideos = () => {
           minHeight: "100vh",
         }}
       >
-        <div className="container pt-4">
+        <div className="container pt-3">
           <div className="card mb-3">
             <div className="card-body">
               <label className="form-label upload-label" htmlFor="image">
@@ -125,7 +125,7 @@ const ManageVideos = () => {
           <div>
             <div className="row">
               {video.map((vid) => (
-                <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0 mt-1">
                   <div className="card shadow-0 border rounded-3">
                     <div className="card-body">
                       <div className="bg-image rounded ">

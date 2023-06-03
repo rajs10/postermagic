@@ -103,7 +103,7 @@ const ManageImage = () => {
 
   const displayImage = () => {
     return (
-      <div className="container pt-4">
+      <div className="container pt-3">
         <div className="card shadow-0 border rounded-3">
           <div className="card-body">
             <label className="form-label upload-label" htmlFor="image">
@@ -112,44 +112,42 @@ const ManageImage = () => {
             <input hidden type="file" id="image" onChange={uploadFile} />
           </div>
         </div>
-        <div className="container py-5">
+        <div className="mt-1">
           <div className="row">
             {markerList.map((marker) => (
-              <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+              <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0 mt-1">
                 <div className="card shadow-0 border rounded-3">
                   <div className="card-body">
-                    <div className="mb-4">
-                      <div className="bg-image ripple shadow-1-strong rounded">
-                        <img
-                          src={url + "/" + marker.image}
-                          className="w-100"
-                          alt="managemarker"
-                        />
-                        <a href="#!">
-                          <div className="d-flex justify-content-start align-items-start h-100">
-                            <h5>
-                              <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
-                                {marker.image}
-                              </span>
-                            </h5>
-                          </div>
-                          <div className="hover-overlay">
-                            <div
-                              className="mask"
-                              style={{
-                                backgroundColor: "rgba(253, 253, 253, 0.15)",
-                              }}
-                            />
-                          </div>
-                        </a>
-                      </div>
-                      <button
-                        className="btn btn-danger btn-lg btn-block mt-2"
-                        onClick={(e) => deleteMarker(marker._id)}
-                      >
-                        Delete
-                      </button>
+                    <div className="bg-image ripple shadow-1-strong rounded">
+                      <img
+                        src={url + "/" + marker.image}
+                        className="w-100"
+                        alt="managemarker"
+                      />
+                      <a href="#!">
+                        <div className="d-flex justify-content-start align-items-start h-100">
+                          <h5>
+                            <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
+                              {marker.image}
+                            </span>
+                          </h5>
+                        </div>
+                        <div className="hover-overlay">
+                          <div
+                            className="mask"
+                            style={{
+                              backgroundColor: "rgba(253, 253, 253, 0.15)",
+                            }}
+                          />
+                        </div>
+                      </a>
                     </div>
+                    <button
+                      className="btn btn-danger btn-lg btn-block mt-2"
+                      onClick={(e) => deleteMarker(marker._id)}
+                    >
+                      Delete
+                    </button>
                   </div>
                 </div>
               </div>
@@ -175,5 +173,4 @@ const ManageImage = () => {
     </>
   );
 };
-
 export default ManageImage;
