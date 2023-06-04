@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import app_config from "../../config";
+import Copyrightfooter from "../main/Copyrightfooter";
 
 const ManagePosters = () => {
   const [loading, setLoading] = useState(true);
@@ -53,9 +54,9 @@ const ManagePosters = () => {
   const displayPosters = () => {
     const arUrl = "http://127.0.0.1:5501/";
     return posterList.map((poster) => (
-      <div className="col-md-4">
+      <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0 mt-1">
         <div className="card">
-          <img src={url + "/" + poster.image} alt="Poster manager" />
+          <img src={url + "/" + poster.image.image} alt="Poster manager" />
           <div className="card-body">
             <a
               target="_blank"
@@ -79,19 +80,23 @@ const ManagePosters = () => {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg?w=740')",
-        backgroundSize: "cover",
-        minHeight: "100vh",
-      }}
-    >
-      <div className="container py-5">
-        <div className="row">{displayPosters()}</div>
+    <>
+      <div
+        style={{
+          backgroundImage:
+            "url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg?w=740')",
+          backgroundSize: "cover",
+          minHeight: "100vh",
+        }}
+      >
+        <div className="container py-5">
+          <div className="row">{displayPosters()}</div>
+        </div>
       </div>
-    </div>
+      <Copyrightfooter />
+    </>
   );
+  
 };
 
 export default ManagePosters;

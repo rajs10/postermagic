@@ -37,6 +37,7 @@ const ManageVideos = () => {
         title: 'Nice',
         text: 'Video fetched'
       });
+      fetchVideo();
     } else {
       Swal.fire({
         icon: "error",
@@ -45,6 +46,7 @@ const ManageVideos = () => {
       });
     }
   };
+
 
   const uploadFile = (e) => {
     const file = e.target.files[0];
