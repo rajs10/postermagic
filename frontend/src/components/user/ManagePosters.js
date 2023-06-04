@@ -56,7 +56,9 @@ const ManagePosters = () => {
     return posterList.map((poster) => (
       <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0 mt-1">
         <div className="card">
-          <img src={url + "/" + poster.image.image} alt="Poster manager" />
+          {poster.image && (
+            <img src={url + "/" + poster.image.image} alt="Poster manager" />
+          )}
           <div className="card-body">
             <a
               target="_blank"
@@ -96,7 +98,7 @@ const ManagePosters = () => {
       <Copyrightfooter />
     </>
   );
-  
+
 };
 
 export default ManagePosters;
