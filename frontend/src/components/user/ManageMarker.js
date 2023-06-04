@@ -87,7 +87,8 @@ const ManageImage = () => {
 
   const fetchImage = async () => {
     setLoading(true);
-    const res = await fetch(url + "/image/getall");
+    // const res = await fetch(url + "/image/getall");
+    const res = await fetch(url + "/image/getbyuser/" + currentUser._id);
     console.log(res.status);
     if (res.status === 200) {
       const data = await res.json();

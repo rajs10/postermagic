@@ -89,7 +89,8 @@ const ManageVideos = () => {
 
   const fetchVideo = async () => {
     setLoading(true);
-    const res = await fetch(url + "/video/getall");
+    // const res = await fetch(url + "/video/getall");
+    const res = await fetch(url + "/video/getbyuser/" + currentUser._id);
     console.log(res.status);
     if (res.status === 200) {
       const data = await res.json();
