@@ -56,13 +56,10 @@ const ManagePosters = () => {
     return posterList.map((poster) => (
       <div className="col-md-4 col-lg-3 col-xl-3 mb-4 mb-lg-0 mt-1">
         <div className="card">
-<<<<<<< HEAD
-          <img src={poster.image ? (url+'/'+poster.image.image) : ''} alt=""/>
-=======
+
           {poster.image && (
             <img src={url + "/" + poster.image.image} alt="Poster manager" />
           )}
->>>>>>> e7ccf0454b914b66243e64daa659e2d40b1b002c
           <div className="card-body">
             <a
               target="_blank"
