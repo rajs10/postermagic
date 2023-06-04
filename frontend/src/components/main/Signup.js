@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import React from "react";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 import Copyrightfooter from "./Copyrightfooter";
 
 const SignupSchema = Yup.object().shape({
@@ -17,6 +18,7 @@ const SignupSchema = Yup.object().shape({
 });
 
 const Signup = () => {
+  const navigate = useNavigate();
   const signupForm = useFormik({
     initialValues: {
       name: "",
@@ -42,6 +44,7 @@ const Signup = () => {
           title: "Nice",
           text: "you have successfully registered",
         });
+        navigate("/main/login");
       } else {
         Swal.fire({
           icon: "error",

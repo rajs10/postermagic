@@ -4,7 +4,6 @@ import { useUserContext } from "../../context/UserProvider";
 
 const Navbar = () => {
   const { loggedIn, setLoggedIn, logout } = useUserContext();
-
   const showLoggedIn = () => {
     if (!loggedIn) {
       return (
