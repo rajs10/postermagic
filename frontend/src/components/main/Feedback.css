@@ -5,6 +5,7 @@
 
 }
 
+
 .rating > input{ display:none;}
 
 .rating > label {
@@ -30,3 +31,8 @@
 
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
 
+@media only screen and (max-width: 600px) {
+  .feedbackbg{
+    height: 85vh;
+  }
+}

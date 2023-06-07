@@ -120,3 +120,24 @@
   
 }
 
+@media only screen and (max-width: 600px) {
+  .feedbackbg{
+    height: 85vh;
+  }
+  .LoginForm{
+    height: 85vh;
+  }
+  .BackgroundImage{
+    height: 85vh;
+  }
+  .team{
+    gap: 10px;
+  }
+  .Solution{
+    display: block !important;
+  }
+  
+}
+
+
+

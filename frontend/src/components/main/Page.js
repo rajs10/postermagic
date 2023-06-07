@@ -50,8 +50,8 @@ const Page = () => {
         </div>
       </>
       <div className="container">
-        <div className="d-flex">
-          <div className="p-2 w-100 float-md-left" id="Retail">
+        <div className="d-flex Solution">
+          <div className="p-2 w-100" id="Retail">
             <h3 className="card-title">Retail</h3>
             <p className="card-text">
               Enhance your retail experience with Postermagic AR! Step into a
@@ -75,16 +75,11 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="d-flex">
-          <div className="p-2 flex-shrink-1" id="Education">
-            <img
-              src={education}
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Education"
-            />
-          </div>
+        <div className="d-flex Solution">
           <div className="p-2 w-100" id="Education">
-            <h3 className="card-title">Education</h3>
+            <h3 className="card-title" id="leftContent">
+              Education
+            </h3>
             <p className="card-text">
               Elevate education with Postermagic AR! Transform traditional
               learning materials into immersive educational experiences.
@@ -99,8 +94,15 @@ const Page = () => {
               revolutionizing the classroom experience.
             </p>
           </div>
+          <div className="p-2 flex-shrink-1" id="Education">
+            <img
+              src={education}
+              className="w-100 shadow-1-strong rounded mb-4"
+              alt="Education"
+            />
+          </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex Solution">
           <div className="p-2 w-100" id="Tourism">
             <h3 className="card-title">Tourism</h3>
             <p className="card-text">
@@ -125,15 +127,8 @@ const Page = () => {
             />
           </div>
         </div>
-        <div className="d-flex">
-          <div className="p-2 flex-shrink-1" id="Entertainment">
-            <img
-              src={entertainment}
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Entertainment"
-            />
-          </div>
-          <div className="p-2 w-100">
+        <div className="d-flex Solution">
+          <div className="p-2 w-100" id="Entertainment">
             <h3 className="card-title">Entertainment</h3>
             <p className="card-text">
               Prepare for unparalleled entertainment with Postermagic AR!
@@ -147,6 +142,13 @@ const Page = () => {
               fun and excitement. Get ready for a mind-bending fusion of reality
               and digital magic that will leave you spellbound.
             </p>
+          </div>
+          <div className="p-2 flex-shrink-1" id="Entertainment">
+            <img
+              src={entertainment}
+              className="w-100 shadow-1-strong rounded mb-4"
+              alt="Entertainment"
+            />
           </div>
         </div>
       </div>
