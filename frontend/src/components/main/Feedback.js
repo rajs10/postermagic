@@ -79,7 +79,9 @@ const Feedback = () => {
                   </label>
                   <div className="">
                     <input
-                      type="text"
+                      type="number"
+                      min={1}
+                      max={10}
                       id="rating"
                       name="rating"
                       value={FeedbackForm.values.rating}

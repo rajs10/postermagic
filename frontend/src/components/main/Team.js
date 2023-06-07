@@ -8,7 +8,7 @@ function Team() {
           Example Based on Augmented Reality
         </h2>
 
-        <div className="row row-cols-1 row-cols-md-4 p-2">
+        <div className="team row row-cols-1 row-cols-md-4 p-2">
           <div className="col">
             <div className="card h-100 ">
               <img
