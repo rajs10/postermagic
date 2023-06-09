@@ -102,6 +102,7 @@ const Navbar = () => {
                 Create AR poster
               </NavLink>
             </li>
+            
             <li className="me-3 me-lg-0 dropdown">
               <a
                 className="nav-link dropdown-toggle"
